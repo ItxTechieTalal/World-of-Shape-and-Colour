@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4919596696978225032}
   - component: {fileID: 4919596696978225047}
   - component: {fileID: 4919596696978225046}
-  - component: {fileID: 4919596696978225033}
   - component: {fileID: 1263217842}
+  - component: {fileID: -440189484028059820}
   m_Layer: 5
   m_Name: AnswerWorldOfShape
   m_TagString: Untagged
@@ -68,28 +68,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: -975288359, guid: a37baede2a5994a8194a4f6494fd1260, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4919596696978225033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4919596696978225035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b40d71d00f294901adb9a82b6909aa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!225 &1263217842
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -102,3 +90,16 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-440189484028059820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4919596696978225035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123ab54563c5b4475b144fab7bd3386f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myImage: {fileID: 0}

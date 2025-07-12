@@ -10,11 +10,23 @@ namespace MiniGame.WorldOfShape
     {
 
         public List<ColorList> shapes = new List<ColorList>();
+        public List<Image> baskets = new List<Image>();
         public GameObject parent;
 
         public GameObject AnsPrefab;
-        public GameObject basketPrefab;
-        public Image basket;
+        public static GamePlayPanelWorld instance;
+
+        void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
         // Start is called before the first frame update
         void Start()
         {
@@ -94,6 +106,13 @@ namespace MiniGame.WorldOfShape
                 int colorListIndex = randomIndexList[group];
                 ColorList colorList = cloneList[colorListIndex];
 
+                // 🟩 Set the basket color
+                if (group < baskets.Count)
+                {
+                    baskets[group].color = colorList.basketColor;
+                    baskets[group].name = group.ToString();
+                }
+
                 for (int i = 0; i < spawnCounts[group]; i++)
                 {
                     if (colorList.shapes.Count == 0)
@@ -109,7 +128,9 @@ namespace MiniGame.WorldOfShape
 
                     // Instantiate answer
                     GameObject ans = Instantiate(AnsPrefab, parent.transform);
+                    ans.name = group.ToString();
                     ans.GetComponent<Image>().sprite = sprite;
+
                 }
             }
 
@@ -133,13 +154,30 @@ namespace MiniGame.WorldOfShape
 
         }
 
+         public bool AreSpritesFromSameQuestion(GameObject g1, GameObject g2)
+        {
+            if (g1.name == g2.name)
+            {
+                Debug.Log("Both sprites found in same question set");
+                return true;
+            }
+            Debug.Log("Both sprites not found in same question set");
+            return false;
+        }
+
+
+
     }
+
 }
+
 
 [System.Serializable]
 public class ColorList
 {
     public string color;
+    public Color basketColor;
+
     public List<Sprite> shapes;
 }
 
