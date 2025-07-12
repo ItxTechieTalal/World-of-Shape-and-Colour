@@ -1,0 +1,915 @@
+fileFormatVersion: 2
+guid: a37baede2a5994a8194a4f6494fd1260
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1299
+        width: 213
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e60f22833e844c5914b2af2a49641d
+      internalID: -975288359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1299
+        width: 209
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41324d4c422af4da2acf26dab1d08eb3
+      internalID: -794852095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_2
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1299
+        width: 248
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f14b0af160f841e89a26f6cf6dff956
+      internalID: 734610144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1299
+        width: 237
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df05ee01b6729499ea1f3479267f095e
+      internalID: 230982582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_4
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1299
+        width: 205
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4400a101b26bc4c27aec1aecec51380e
+      internalID: 508565418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_5
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1299
+        width: 205
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c329a8a37dd834594a522364ae11835f
+      internalID: 935058069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_6
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 1299
+        width: 210
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7668f0467954dcfa6f4bd1a47ac2f4
+      internalID: 1585988823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_7
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1299
+        width: 206
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b03e475d277a46428ad9c1cece44d4a
+      internalID: 972864837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_8
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1555
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34a4563e7cae423cb42df134cab56f6
+      internalID: 2123098340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_9
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1495
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c277efb4729894c239d50d03f19d86e1
+      internalID: -600928573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 979
+        width: 392
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263557fe6775b49a7aea9f201f096480
+      internalID: -897974002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 979
+        width: 399
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2026ce555a4ec2a6133c682c92ccf
+      internalID: 1947056023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_12
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 979
+        width: 237
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27da19bb482394fde90773ff859c6042
+      internalID: 2060920080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_13
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 979
+        width: 264
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1558da03603ea449399bba6e778d17a5
+      internalID: 1681675307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_14
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 979
+        width: 224
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fcdc215596c4e52aa113c72322dd15
+      internalID: 12010974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_15
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 979
+        width: 338
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e2d61c23e63471594f446601d00f8b
+      internalID: -340154544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 659
+        width: 195
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5074d83eb5945e5afb26228755f150
+      internalID: 2001007942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 659
+        width: 237
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559479309697a45ba87396577023756c
+      internalID: 407850157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_18
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 659
+        width: 334
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5076193628cce41b397347b907321457
+      internalID: 189068948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_19
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 659
+        width: 299
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf37a56d44f14853a5e2302d65cdc86
+      internalID: 318482194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_20
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 660
+        width: 214
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b49b34ad0ca4d35abbf2b4a7426cdf
+      internalID: -956620983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_21
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 659
+        width: 276
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1f7ab3e54fc403da055567ac326ece
+      internalID: 2042948625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 339
+        width: 246
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcc4d3ada4bf4eef8cc71a0f98d942e
+      internalID: -578636513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 339
+        width: 226
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfbb3aade1084c8a80e06fa5be42c61
+      internalID: 439441180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_24
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 339
+        width: 260
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d839685a4dff547889c95f1eba438dfd
+      internalID: -241318042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_25
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 339
+        width: 193
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70325958c85ba49b39a52cc7029b0c3a
+      internalID: 72893240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_26
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 340
+        width: 201
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f63b9858a61b4ee499549c4ed240e6f
+      internalID: 771704822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_27
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 349
+        width: 405
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a0145792b2544bb9727a94bc58d8da
+      internalID: 1811291294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_28
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 339
+        width: 222
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6453968a5b846e8bed27bde979df08
+      internalID: 1397248022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_29
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 215
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d7a868104f446b5b4da79997cfb7c1
+      internalID: -545163540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 19
+        width: 215
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b9c7d435bc24c289019fda9ebe6368
+      internalID: -1285528981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_31
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 19
+        width: 224
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f554ab11fdb4236862eab538aba301
+      internalID: 172159194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_32
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 19
+        width: 239
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f970b0c8a5a654020a6bb0f9decfa720
+      internalID: 2128960636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_33
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 19
+        width: 246
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eee0718a728244a782b08527fed300b
+      internalID: 1938448945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_34
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 19
+        width: 244
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661a3f6c0132b462cab0007c936866bb
+      internalID: 1764891451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-animal-cartoon-character_35
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 19
+        width: 372
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2a5f19955724f6ea8b7d6e63e88bab
+      internalID: -1775711894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      set-animal-cartoon-character_0: -975288359
+      set-animal-cartoon-character_1: -794852095
+      set-animal-cartoon-character_10: -897974002
+      set-animal-cartoon-character_11: 1947056023
+      set-animal-cartoon-character_12: 2060920080
+      set-animal-cartoon-character_13: 1681675307
+      set-animal-cartoon-character_14: 12010974
+      set-animal-cartoon-character_15: -340154544
+      set-animal-cartoon-character_16: 2001007942
+      set-animal-cartoon-character_17: 407850157
+      set-animal-cartoon-character_18: 189068948
+      set-animal-cartoon-character_19: 318482194
+      set-animal-cartoon-character_2: 734610144
+      set-animal-cartoon-character_20: -956620983
+      set-animal-cartoon-character_21: 2042948625
+      set-animal-cartoon-character_22: -578636513
+      set-animal-cartoon-character_23: 439441180
+      set-animal-cartoon-character_24: -241318042
+      set-animal-cartoon-character_25: 72893240
+      set-animal-cartoon-character_26: 771704822
+      set-animal-cartoon-character_27: 1811291294
+      set-animal-cartoon-character_28: 1397248022
+      set-animal-cartoon-character_29: -545163540
+      set-animal-cartoon-character_3: 230982582
+      set-animal-cartoon-character_30: -1285528981
+      set-animal-cartoon-character_31: 172159194
+      set-animal-cartoon-character_32: 2128960636
+      set-animal-cartoon-character_33: 1938448945
+      set-animal-cartoon-character_34: 1764891451
+      set-animal-cartoon-character_35: -1775711894
+      set-animal-cartoon-character_4: 508565418
+      set-animal-cartoon-character_5: 935058069
+      set-animal-cartoon-character_6: 1585988823
+      set-animal-cartoon-character_7: 972864837
+      set-animal-cartoon-character_8: 2123098340
+      set-animal-cartoon-character_9: -600928573
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: ec48f6336a9464570b5ba8e497367c43
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 311
+        width: 183
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8522b75bd82c74ba99856c0888e8d628
+      internalID: 1826154176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 350
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7639367ae686b403783747a67b93a230
+      internalID: -90829975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 344
+        width: 91
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d7d3ef9259c44bcb7f473f436a6b93
+      internalID: -226736870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 319
+        width: 64
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2295c63c29b4a7c8bec40dd3683cd3
+      internalID: -1411152661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 222
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b07ac7e28824014af4945982c89e1b
+      internalID: -1662278682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 209
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701ff4d4d8d6f452d88820df44b599fc
+      internalID: 112521587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 209
+        width: 128
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52a72e70718742b38529c8d91ef5cc2
+      internalID: 1620276028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 45
+        width: 121
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a72533b25a76473db288fec78e3b7df
+      internalID: -104736023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 3
+        width: 150
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca2726f1fba846d698215dd46ed1368
+      internalID: -1788734208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 33
+        width: 135
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114109579ca084dfa8a1f6cd1c29892c
+      internalID: 1089568375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_0: 1826154176
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_1: -90829975
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_2: -226736870
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_3: -1411152661
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_4: -1662278682
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_5: 112521587
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_6: 1620276028
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_7: -104736023
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_8: -1788734208
+      2006.i123.010.P.m004.c33.plasticine_modeling_clay_school_objects_set-removebg-preview_9: 1089568375
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

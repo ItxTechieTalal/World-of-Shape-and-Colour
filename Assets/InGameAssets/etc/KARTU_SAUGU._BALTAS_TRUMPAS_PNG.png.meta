@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: d8fe012fbbfa24a7bb57a843cf56677e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -951939171116082821
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_0
+  - first:
+      213: -6811971400845609023
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_1
+  - first:
+      213: -1012083637642721169
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_2
+  - first:
+      213: -3269598361860565717
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_3
+  - first:
+      213: 8490878172921374705
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_4
+  - first:
+      213: -4577889353350179514
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_5
+  - first:
+      213: -843622129542195453
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_6
+  - first:
+      213: 5308642430340385630
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_7
+  - first:
+      213: -4983343896707021912
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_8
+  - first:
+      213: 4263499393301121566
+    second: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_9
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_0
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 781
+        width: 109
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7998d11e580ac2f0800000000000000
+      internalID: -951939171116082821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_1
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 781
+        width: 109
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c73a703a140771a0800000000000000
+      internalID: -6811971400845609023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_2
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 781
+        width: 112
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6802573b4b54f1f0800000000000000
+      internalID: -1012083637642721169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_3
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 781
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b251a1bec9d00a2d0800000000000000
+      internalID: -3269598361860565717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_4
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 779
+        width: 109
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7a81036b8a5d570800000000000000
+      internalID: 8490878172921374705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_5
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 633
+        width: 106
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645158843e11870c0800000000000000
+      internalID: -4577889353350179514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_6
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 635
+        width: 109
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3079af3942ada44f0800000000000000
+      internalID: -843622129542195453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_7
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 633
+        width: 109
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b410cf9261ca940800000000000000
+      internalID: 5308642430340385630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_8
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 633
+        width: 112
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3ca2bf02b97dab0800000000000000
+      internalID: -4983343896707021912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KARTU_SAUGU._BALTAS_TRUMPAS_PNG_9
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 633
+        width: 109
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a8ec5fb1efa2b30800000000000000
+      internalID: 4263499393301121566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_0: -951939171116082821
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_1: -6811971400845609023
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_2: -1012083637642721169
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_3: -3269598361860565717
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_4: 8490878172921374705
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_5: -4577889353350179514
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_6: -843622129542195453
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_7: 5308642430340385630
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_8: -4983343896707021912
+      KARTU_SAUGU._BALTAS_TRUMPAS_PNG_9: 4263499393301121566
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
