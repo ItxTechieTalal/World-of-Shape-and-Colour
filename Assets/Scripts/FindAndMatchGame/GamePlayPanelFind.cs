@@ -44,51 +44,6 @@ namespace MiniGame.FindAndMatch
 
         }
 
-        void Update()
-        {
-            // if (!isCreatingQuestion && BottomContainer.transform.childCount <= 0)
-            // {
-            //     StarsContainerFind.instance.MiniLevelCleared(GameManagerFind.instance.clearedLevels, miniLevel);
-            //     miniLevel++;
-            //     if (miniLevel >= StarsContainerFind.MINI_LEVEL_TARGET)
-            //     {
-            //         miniLevel = 0;
-            //         StarsContainerFind.instance.LevelCleared(GameManagerFind.instance.clearedLevels);
-            //         GameManagerFind.instance.clearedLevels++;
-            //     }
-
-            //     CreateQuestion();
-            // }
-        }
-
-        // public IEnumerator MonitorContainer()
-        // {
-        //     while (true)
-        //     {
-        //         yield return new WaitForSeconds(0.2f);
-        //         if (!isCreatingQuestion && BottomContainer.transform.childCount <= 0)
-        //         {
-        //             StarsContainerFind.instance.MiniLevelCleared(GameManagerFind.instance.clearedLevels, miniLevel);
-        //             miniLevel++;
-        //             if (miniLevel >= StarsContainerFind.MINI_LEVEL_TARGET)
-        //             {
-        //                 miniLevel = 0;
-        //                 bool isLevelCleared = GameManagerFind.instance.IsLevelCleared(9);
-
-        //                 if (isLevelCleared)
-        //                 {
-        //                     GameManagerFind.instance.LevelClearedPanelSize.gameObject.SetActive(true);
-        //                     yield break; // Stop the coroutine since level is fully cleared
-        //                 }
-        //                 StarsContainerFind.instance.LevelCleared(GameManagerFind.instance.clearedLevels);
-        //                 GameManagerFind.instance.clearedLevels++;
-        //             }
-
-        //             CreateQuestion();
-        //         }
-        //     }
-        // }
-
 
         public void PlayMonitorContainer()
         {

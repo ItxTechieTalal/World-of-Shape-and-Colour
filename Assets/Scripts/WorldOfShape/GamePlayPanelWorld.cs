@@ -14,8 +14,11 @@ namespace MiniGame.WorldOfShape
         public GameObject parent;
 
         public GameObject AnsPrefab;
+        public GameObject BottomContainer;
         public static GamePlayPanelWorld instance;
         public GridLayoutGroup gridLayoutGroup;
+        private Coroutine shuffleCoRoutine;
+
 
         void Awake()
         {
@@ -92,6 +95,9 @@ namespace MiniGame.WorldOfShape
 
         IEnumerator CreateQuestionCoroutine()
         {
+            Coroutine up = StartCoroutine(ClearChilds());
+            yield return up;
+
             gridLayoutGroup.enabled = true;
 
             if (shapes.Count < 3)
@@ -100,7 +106,16 @@ namespace MiniGame.WorldOfShape
                 yield break;
             }
 
-            List<ColorList> cloneList = new List<ColorList>(shapes);
+            // List<ColorList> cloneList = new List<ColorList>(shapes);
+            List<ColorList> cloneList = new List<ColorList>();
+            foreach (ColorList item in shapes)
+            {
+                ColorList newItem = new ColorList();
+                newItem.color = item.color;
+                newItem.basketColor = item.basketColor;
+                newItem.shapes = new List<Sprite>(item.shapes); // New list of sprites
+                cloneList.Add(newItem);
+            }
             List<int> randomIndexList = Select3RandomNo();
 
             int[] spawnCounts = new int[] { 2, 3, 3 }; // you want 2, 3, and 3 from the 3 selected groups
@@ -132,12 +147,15 @@ namespace MiniGame.WorldOfShape
 
                     // Instantiate answer
                     GameObject ans = Instantiate(AnsPrefab, parent.transform);
+                    ans.transform.localScale = Vector3.zero;
                     ans.transform.GetChild(0).name = group.ToString();
                     ans.transform.GetChild(0).GetComponent<Image>().sprite = sprite;
+                    LeanTween.scale(ans, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
 
+                    yield return new WaitForSeconds(0.3f);
                 }
             }
-            yield return new WaitForSeconds(0.5f);
+            ShuffleBottomContainerChildren();
             gridLayoutGroup.enabled = false;
         }
 
@@ -168,7 +186,102 @@ namespace MiniGame.WorldOfShape
             Debug.Log("Both sprites not found in same question set");
             return false;
         }
+        private void ShuffleBottomContainerChildren()
+        {
+            shuffleCoRoutine = StartCoroutine(ShuffleBottomContainerChildrenQ());
+        }
 
+        private IEnumerator ShuffleBottomContainerChildrenQ()
+        {
+            // Get all children transforms
+            List<Transform> children = new List<Transform>();
+            foreach (Transform child in BottomContainer.transform)
+            {
+                children.Add(child);
+            }
+
+            if (children.Count == 0)
+            {
+                yield break; // Nothing to shuffle
+            }
+
+            // Fisher-Yates shuffle
+            for (int i = 0; i < children.Count; i++)
+            {
+                children[i].localScale = Vector3.zero;
+                int randomIndex = Random.Range(i, children.Count);
+                // Swap
+                Transform temp = children[i];
+                children[i] = children[randomIndex];
+                children[randomIndex] = temp;
+            }
+
+            // Re-assign sibling indices
+            for (int i = 0; i < children.Count; i++)
+            {
+                children[i].SetSiblingIndex(i);
+
+            }
+            // yield return new WaitForSeconds(0.1f);
+            yield return new WaitForEndOfFrame();
+            foreach (Transform child in BottomContainer.transform)
+            {
+                yield return new WaitForSeconds(0.3f);
+                // child.transform.localScale = Vector3.one;
+                LeanTween.scale(child.gameObject, Vector3.one, 0.5f);
+            }
+
+        }
+
+
+
+        public void SkipButton()
+        {
+            // LeanTween.cancelAll();
+            // isCreatingQuestion = true;
+            // Handheld.Vibrate();
+            // // StopCoroutine(createQuestionRoutine);
+
+            // bool isLevelCleared = GameManagerFind.instance.IsLevelCleared(9);
+            // miniLevel = 0;
+            // if (isLevelCleared)
+            // {
+            //     GameManagerFind.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+            //     return;
+            // }
+            // AudioManagerFind.instance.PlayButtonSound(6);
+
+            // StarsContainerFind.instance.LevelSkipped(GameManagerFind.instance.clearedLevels);
+            // GameManagerFind.instance.clearedLevels++;
+            // isCreatingQuestion = false;
+            CreateQuestion();
+
+        }
+
+
+        private IEnumerator ClearChilds()
+        {
+            for (int i = parent.transform.childCount - 1; i >= 0; i--)
+            {
+                LeanTween.scale(parent.transform.GetChild(i).gameObject, Vector3.zero, 0.2f).setOnComplete(() =>
+                {
+                    Destroy(parent.transform.GetChild(i).gameObject);
+                });
+                yield return new WaitForSeconds(0.3f);
+            }
+            yield return new WaitForSeconds(0.3f);
+            for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
+            {
+                LeanTween.scale(BottomContainer.transform.GetChild(i).gameObject, Vector3.zero, 0.5f).setOnComplete(() =>
+                {
+                    foreach (Transform child in BottomContainer.transform.GetChild(i).transform.GetChild(0).transform)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                });
+                yield return new WaitForSeconds(0.3f);
+            }
+        }
 
 
     }
