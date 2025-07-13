@@ -10559,6 +10559,7 @@ MonoBehaviour:
   AnsPrefab: {fileID: 8618856407222528467, guid: 6f2bbffc6b4c2428a9e8135414c99e71, type: 3}
   BottomContainer: {fileID: 2060127544}
   gridLayoutGroup: {fileID: 0}
+  ansSolvedCount: 0
 --- !u!1 &1463858522
 GameObject:
   m_ObjectHideFlags: 0

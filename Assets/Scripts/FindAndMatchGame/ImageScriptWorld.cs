@@ -158,7 +158,7 @@ namespace MiniGame.WorldOfShape
                     canBeDraged = false;
                     this.transform.parent = eventData.pointerEnter.transform.GetChild(0).transform;
                     this.transform.localPosition = new Vector3(0, -150, 0);
-                    // LeanTween.scale(img.gameObject, Vector3.one * 0.8f, 0.3f).setLoopPingPong(2);
+                    LeanTween.scale(img.gameObject, Vector3.one * 0.8f, 0.3f).setLoopPingPong(2);
                     // LeanTween.delayedCall(1f, () =>
                     // {
                     //     if (img != null)

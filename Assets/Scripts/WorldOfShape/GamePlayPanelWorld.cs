@@ -18,6 +18,7 @@ namespace MiniGame.WorldOfShape
         public static GamePlayPanelWorld instance;
         public GridLayoutGroup gridLayoutGroup;
         private Coroutine shuffleCoRoutine;
+        public int ansSolvedCount = 0;
 
 
         void Awake()
@@ -181,6 +182,8 @@ namespace MiniGame.WorldOfShape
             if (g1.name == g2.name)
             {
                 Debug.Log("Both sprites found in same question set");
+                // ansSolvedCount++;
+                isSolved(8);
                 return true;
             }
             Debug.Log("Both sprites not found in same question set");
@@ -286,26 +289,46 @@ namespace MiniGame.WorldOfShape
                     Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
                     DestroyImmediate(myChild.gameObject);
                     yield return new WaitForEndOfFrame();
-                    }
-                
+                }
+
                 yield return new WaitForSeconds(0.3f);
             }
         }
 
 
+
+
+
+
+        public void isSolved(int ans)
+        {
+            int count = 0;
+            for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
+            {
+
+                for (int j = BottomContainer.transform.GetChild(i).transform.GetChild(0)
+                .transform.childCount - 1; j >= 0; j--)
+                {
+                    // Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
+                    count++;
+                }
+            }
+            if (count >= ans)
+            {
+                CreateQuestion();
+            }
+        }
     }
-
 }
 
+    [System.Serializable]
+    public class ColorList
+    {
+        public string color;
+        public Color basketColor;
 
-[System.Serializable]
-public class ColorList
-{
-    public string color;
-    public Color basketColor;
-
-    public List<Sprite> shapes;
-}
+        public List<Sprite> shapes;
+    }
 
 
 
