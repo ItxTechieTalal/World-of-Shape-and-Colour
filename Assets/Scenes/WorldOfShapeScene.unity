@@ -784,7 +784,7 @@ RectTransform:
   m_GameObject: {fileID: 141590193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1051666062}
@@ -5219,7 +5219,7 @@ RectTransform:
   m_GameObject: {fileID: 755469880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1098699414}
@@ -7605,7 +7605,7 @@ RectTransform:
   m_GameObject: {fileID: 1107353982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2092177300}
@@ -10278,8 +10278,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1451462866}
-        m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GamePlayPanelFind, Assembly-CSharp
+      - m_Target: {fileID: 1451462867}
+        m_TargetAssemblyTypeName: MiniGame.WorldOfShape.GamePlayPanelWorld, Assembly-CSharp
         m_MethodName: SkipButton
         m_Mode: 1
         m_Arguments:
@@ -10520,7 +10520,6 @@ MonoBehaviour:
     - {fileID: 464803954, guid: 55d064eeb361e44c5922fc855e59afb1, type: 3}
     - {fileID: -1650093289, guid: 8e8f4ee27ec044710997130109d7198a, type: 3}
     - {fileID: -380406856, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
-    - {fileID: -1650093289, guid: 8e8f4ee27ec044710997130109d7198a, type: 3}
   - color: yellow
     basketColor: {r: 1, g: 1, b: 0, a: 1}
     shapes:
@@ -10551,6 +10550,7 @@ MonoBehaviour:
     - {fileID: 838083556, guid: cf5b973cd00384160a569073e3a32fb7, type: 3}
     - {fileID: 1576067882, guid: cf5b973cd00384160a569073e3a32fb7, type: 3}
     - {fileID: -1896404540, guid: cf5b973cd00384160a569073e3a32fb7, type: 3}
+    - {fileID: -1788734208, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
   baskets:
   - {fileID: 141590195}
   - {fileID: 755469882}

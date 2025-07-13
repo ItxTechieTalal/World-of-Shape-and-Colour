@@ -272,13 +272,22 @@ namespace MiniGame.WorldOfShape
             yield return new WaitForSeconds(0.3f);
             for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
             {
-                LeanTween.scale(BottomContainer.transform.GetChild(i).gameObject, Vector3.zero, 0.5f).setOnComplete(() =>
+                LeanTween.scale(BottomContainer.transform.GetChild(i).gameObject, Vector3.zero, 0.5f);
+                yield return new WaitForSeconds(0.3f);
+                // foreach (Transform child in BottomContainer.transform.GetChild(i).transform.GetChild(0).transform)
+                // {
+                //     Transform myChild = child;
+                //     DestroyImmediate(myChild.gameObject);
+                //     yield return new WaitForEndOfFrame();
+                // }
+                for (int j = BottomContainer.transform.GetChild(i).transform.GetChild(0)
+                .transform.childCount - 1; j >= 0; j--)
                 {
-                    foreach (Transform child in BottomContainer.transform.GetChild(i).transform.GetChild(0).transform)
-                    {
-                        Destroy(child.gameObject);
+                    Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
+                    DestroyImmediate(myChild.gameObject);
+                    yield return new WaitForEndOfFrame();
                     }
-                });
+                
                 yield return new WaitForSeconds(0.3f);
             }
         }
