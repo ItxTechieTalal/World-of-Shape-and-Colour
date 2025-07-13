@@ -15,6 +15,7 @@ namespace MiniGame.WorldOfShape
 
         public GameObject AnsPrefab;
         public static GamePlayPanelWorld instance;
+        public GridLayoutGroup gridLayoutGroup;
 
         void Awake()
         {
@@ -26,6 +27,7 @@ namespace MiniGame.WorldOfShape
             {
                 Destroy(gameObject);
             }
+            gridLayoutGroup = parent.GetComponent<GridLayoutGroup>();
         }
         // Start is called before the first frame update
         void Start()
@@ -90,6 +92,8 @@ namespace MiniGame.WorldOfShape
 
         IEnumerator CreateQuestionCoroutine()
         {
+            gridLayoutGroup.enabled = true;
+
             if (shapes.Count < 3)
             {
                 Debug.LogWarning("Not enough shape groups.");
@@ -128,13 +132,13 @@ namespace MiniGame.WorldOfShape
 
                     // Instantiate answer
                     GameObject ans = Instantiate(AnsPrefab, parent.transform);
-                    ans.name = group.ToString();
-                    ans.GetComponent<Image>().sprite = sprite;
+                    ans.transform.GetChild(0).name = group.ToString();
+                    ans.transform.GetChild(0).GetComponent<Image>().sprite = sprite;
 
                 }
             }
-
             yield return new WaitForSeconds(0.5f);
+            gridLayoutGroup.enabled = false;
         }
 
         List<int> Select3RandomNo()
@@ -154,7 +158,7 @@ namespace MiniGame.WorldOfShape
 
         }
 
-         public bool AreSpritesFromSameQuestion(GameObject g1, GameObject g2)
+        public bool AreSpritesFromSameQuestion(GameObject g1, GameObject g2)
         {
             if (g1.name == g2.name)
             {
