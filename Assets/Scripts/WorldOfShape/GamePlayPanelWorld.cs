@@ -20,6 +20,7 @@ namespace MiniGame.WorldOfShape
         private Coroutine shuffleCoRoutine;
         public int ansSolvedCount = 0;
         private bool isCreatingQuestion = false;
+        
 
 
 
@@ -258,7 +259,7 @@ namespace MiniGame.WorldOfShape
             //     GameManagerFind.instance.LevelClearedPanelSize.gameObject.SetActive(true);
             //     return;
             // }
-            // AudioManagerFind.instance.PlayButtonSound(6);
+            AudioManagerWorld.instance.PlayButtonSound(6);
 
             // StarsContainerFind.instance.LevelSkipped(GameManagerFind.instance.clearedLevels);
             // GameManagerFind.instance.clearedLevels++;
@@ -307,10 +308,10 @@ namespace MiniGame.WorldOfShape
         {
             while (true)
             {
-                
-            yield return new WaitForSeconds(3f);
-            Debug.Log("CheckIfSolveSafe");
-            isSolved(8);
+
+                yield return new WaitForSeconds(3f);
+                Debug.Log("CheckIfSolveSafe");
+                isSolved(8);
             }
         }
 

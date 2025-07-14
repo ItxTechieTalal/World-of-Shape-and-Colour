@@ -1,0 +1,95 @@
+{
+  "languages": [
+    {
+      "name": "English",
+      "lines": [
+        "Play",
+        "Match, Sort, and Learn - One Shape at a Time!",
+        "Match, Sort, and Learn - One Shape at a Time!",
+        "Skip",
+        "Great",
+        "Repeat",
+        "Match, Sort, and Learn - One Shape at a Time!",
+        "Match, Sort, and Learn - One Shape at a Time!"
+      ]
+    },
+    {
+      "name": "Lietuvių",
+      "lines": [
+        "Žaisti",
+        "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!",
+        "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!",
+        "Praleisti",
+        "Puiku",
+        "Kartoti",
+        "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!",
+        "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!"
+      ]
+    },
+    {
+      "name": "Eesti",
+      "lines": [
+        "Mängi",
+        "Sorteeri, sobita ja õpi - üks kuju korraga!",
+        "Sorteeri, sobita ja õpi - üks kuju korraga!",
+        "Jäta vahele",
+        "Suurepärane",
+        "Korda",
+        "Sorteeri, sobita ja õpi - üks kuju korraga!",
+        "Sorteeri, sobita ja õpi - üks kuju korraga!"
+      ]
+    },
+    {
+      "name": "Latviešu",
+      "lines": [
+        "Spēlēt",
+        "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!",
+        "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!",
+        "Izlaist",
+        "Labi",
+        "Atkārtot",
+        "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!",
+        "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!"
+      ]
+    },
+    {
+      "name": "Polski",
+      "lines": [
+        "Graj",
+        "Sortuj, dopasuj i ucz się - jedna forma na raz!",
+        "Sortuj, dopasuj i ucz się - jedna forma na raz!",
+        "Pomiń",
+        "Super",
+        "Powtórz",
+        "Sortuj, dopasuj i ucz się - jedna forma na raz!",
+        "Sortuj, dopasuj i ucz się - jedna forma na raz!"
+      ]
+    },
+    {
+      "name": "Čeština",
+      "lines": [
+        "Hrát",
+        "Třiď, přiřazuj a uč se - jedna tvary za druhou!",
+        "Třiď, přiřazuj a uč se - jedna tvary za druhou!",
+        "Přeskočit",
+        "Výborně",
+        "Zopakovat",
+        "Třiď, přiřazuj a uč se - jedna tvary za druhou!",
+        "Třiď, přiřazuj a uč se - jedna tvary za druhou!"
+      ]
+    },
+    {
+      "name": "Slovenčina",
+      "lines": [
+        "Hrať",
+        "Triedi, priraďuj a uč sa - jedna tvar za druhou!",
+        "Triedi, priraďuj a uč sa - jedna tvar za druhou!",
+        "Preskočiť",
+        "Skvelé",
+        "Opakovať",
+        "Triedi, priraďuj a uč sa - jedna tvar za druhou!",
+        "Triedi, priraďuj a uč sa - jedna tvar za druhou!"
+      ]
+    }
+  ]
+}

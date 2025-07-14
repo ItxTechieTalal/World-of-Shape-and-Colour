@@ -196,7 +196,7 @@ namespace MiniGame.WorldOfShape
 
         void PopulateLnagauages()
         {
-            TextAsset jsonFile = Resources.Load<TextAsset>("language_translations_Find");
+            TextAsset jsonFile = Resources.Load<TextAsset>("language_translations_World");
             if (jsonFile != null)
             {
                 languageList = JsonUtility.FromJson<LanguageList>(jsonFile.text);
