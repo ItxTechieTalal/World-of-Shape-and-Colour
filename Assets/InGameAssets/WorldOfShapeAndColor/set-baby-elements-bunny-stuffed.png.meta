@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: 73df630d52562458d9baacffd3d1f108
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1244
+        width: 248
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f8c551920fa4204a968e08e888d8c7
+      internalID: 2135773519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_1
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1462
+        width: 567
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a6621af752241f6a2e11906eb1e42b
+      internalID: 1347499068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_2
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1323
+        width: 415
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af9cb5d313b44ddfb7e50c04606aabe
+      internalID: -1668836282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_3
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1320
+        width: 146
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034c05c62145849519d78b0e91079977
+      internalID: 2003315190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 943
+        width: 200
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec96850e2d2644349bd957ced4db7079
+      internalID: -1339137596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 943
+        width: 201
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fecafade0c543978ada6f6ed455b38
+      internalID: 539805789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_6
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 200
+        width: 452
+        height: 1167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d2b438c63164d8bb773d0abbaacc5b
+      internalID: -1072979903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_7
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 850
+        width: 423
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f389a66dbafaa40218e6b55abebfe25e
+      internalID: -360137714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_8
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 169
+        width: 320
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e704dada5e0451abf2a6bea8a5374c
+      internalID: -1835166337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_9
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 171
+        width: 480
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae522f2706fcf469fb86c2419eab014f
+      internalID: -199430008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_10
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 59
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e034e71e8ec9b4f99a5ff636fe567a24
+      internalID: -506591796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_11
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 89
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b7fff6879b3402d810c3df4fc1d30b
+      internalID: 1874700086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_12
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 59
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026331519efeb44d4bd1ee9358db6d75
+      internalID: -1871054456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_13
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 49
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58160ebaa2c54ba29394c4a03332dfc
+      internalID: -1804851849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_14
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 56
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb63df84ebc1f422db5946bb0d798056
+      internalID: 1514946961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_15
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 59
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca22834d4154347e8bb8250e01de9831
+      internalID: 1123152224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_16
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 89
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d8f81f2a9774759a8c26372ec73369
+      internalID: 1449015063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_17
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 59
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be635ad8f473b4bc88e351a17205167a
+      internalID: 754389551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_18
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 59
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2405ae1d7c9e549efa8e29a257b78594
+      internalID: -901277013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_19
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 59
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5320b0d05f34c8094b6e9ad46390a0
+      internalID: -520003985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_20
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 50
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eea54eeb6c74f2e86cc7932ac66089
+      internalID: 574550851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_21
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 59
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c654dd7e942dd442b8d29837d9732962
+      internalID: -1301019921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_22
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 59
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c22ea071fbed48ff8db01c293e7b48f
+      internalID: 657698054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_23
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 50
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d21ab4327f0410dbe7e75d6b41a05a
+      internalID: -105815999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_24
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 59
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a9dbb6243f143eaacfe454f73a3326
+      internalID: 1257778753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_25
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 59
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e87cdfcba45452dbe4c83401b3b79c
+      internalID: 1503236633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_26
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 59
+        width: 54
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899fd8f95bbd54999bc9ce6566644205
+      internalID: 350786614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: set-baby-elements-bunny-stuffed_27
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 59
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095b936622f17403a80be28e66319ffc
+      internalID: -909190874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      set-baby-elements-bunny-stuffed_0: 2135773519
+      set-baby-elements-bunny-stuffed_1: 1347499068
+      set-baby-elements-bunny-stuffed_10: -506591796
+      set-baby-elements-bunny-stuffed_11: 1874700086
+      set-baby-elements-bunny-stuffed_12: -1871054456
+      set-baby-elements-bunny-stuffed_13: -1804851849
+      set-baby-elements-bunny-stuffed_14: 1514946961
+      set-baby-elements-bunny-stuffed_15: 1123152224
+      set-baby-elements-bunny-stuffed_16: 1449015063
+      set-baby-elements-bunny-stuffed_17: 754389551
+      set-baby-elements-bunny-stuffed_18: -901277013
+      set-baby-elements-bunny-stuffed_19: -520003985
+      set-baby-elements-bunny-stuffed_2: -1668836282
+      set-baby-elements-bunny-stuffed_20: 574550851
+      set-baby-elements-bunny-stuffed_21: -1301019921
+      set-baby-elements-bunny-stuffed_22: 657698054
+      set-baby-elements-bunny-stuffed_23: -105815999
+      set-baby-elements-bunny-stuffed_24: 1257778753
+      set-baby-elements-bunny-stuffed_25: 1503236633
+      set-baby-elements-bunny-stuffed_26: 350786614
+      set-baby-elements-bunny-stuffed_27: -909190874
+      set-baby-elements-bunny-stuffed_3: 2003315190
+      set-baby-elements-bunny-stuffed_4: -1339137596
+      set-baby-elements-bunny-stuffed_5: 539805789
+      set-baby-elements-bunny-stuffed_6: -1072979903
+      set-baby-elements-bunny-stuffed_7: -360137714
+      set-baby-elements-bunny-stuffed_8: -1835166337
+      set-baby-elements-bunny-stuffed_9: -199430008
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

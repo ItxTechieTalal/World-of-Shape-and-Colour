@@ -297,9 +297,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 266.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30316911
@@ -791,10 +791,10 @@ RectTransform:
   m_Father: {fileID: 2060127545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -76}
+  m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141590195
 MonoBehaviour:
@@ -2822,9 +2822,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 987.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477688580
@@ -4671,7 +4671,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 838902072}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GameManagerFind, Assembly-CSharp
         m_MethodName: OpenInitialPanel
         m_Mode: 1
@@ -4998,9 +4998,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 472.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715131476
@@ -5126,7 +5126,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 838902072}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GameManagerFind, Assembly-CSharp
         m_MethodName: ActiveHowToPlayPanel
         m_Mode: 1
@@ -5226,10 +5226,10 @@ RectTransform:
   m_Father: {fileID: 2060127545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -76}
+  m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755469882
 MonoBehaviour:
@@ -5411,9 +5411,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 163.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797927584
@@ -5492,9 +5492,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 575.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833918297
@@ -5674,7 +5674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838902071}
-  - component: {fileID: 838902072}
+  - component: {fileID: 838902073}
   m_Layer: 0
   m_Name: ---GameManager---
   m_TagString: Untagged
@@ -5697,7 +5697,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &838902072
+--- !u!114 &838902073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5706,7 +5706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 838902069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57f69230ea6e84568bf72936d06f2324, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a20e8d01d1c5446f9936f5d99763d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   clearedLevels: 0
@@ -5851,7 +5851,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 838902072}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GameManagerFind, Assembly-CSharp
         m_MethodName: CloseHowToPlayPanel
         m_Mode: 1
@@ -6328,8 +6328,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 838902072}
-        m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GameManagerFind, Assembly-CSharp
+      - m_Target: {fileID: 838902073}
+        m_TargetAssemblyTypeName: MiniGame.WorldOfShape.GameManagerWorld, Assembly-CSharp
         m_MethodName: SolverTheProblemSound
         m_Mode: 1
         m_Arguments:
@@ -6684,9 +6684,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934095657
@@ -6765,9 +6765,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 884.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952228013
@@ -7612,10 +7612,10 @@ RectTransform:
   m_Father: {fileID: 2060127545}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 900, y: -76}
+  m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107353984
 MonoBehaviour:
@@ -9167,6 +9167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312141882}
   - component: {fileID: 1312141886}
+  - component: {fileID: 1312141887}
   m_Layer: 0
   m_Name: ---TextManager---
   m_TagString: Untagged
@@ -9196,9 +9197,49 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312141880}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa202c4e706b14a688fe6d095a4f96e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languageList:
+    languages: []
+  textInputs:
+  - name: play
+    text: {fileID: 1153736261}
+  - name: "Tap the one that\u2019s different!"
+    text: {fileID: 24320045}
+  - name: tap the on2
+    text: {fileID: 874016814}
+  - name: skip
+    text: {fileID: 1712212019}
+  - name: great
+    text: {fileID: 546559304}
+  - name: repeat
+    text: {fileID: 1172131711}
+  - name: solve
+    text: {fileID: 24320045}
+  - name: solve2
+    text: {fileID: 874016814}
+  gameNames:
+  - {fileID: 21300000, guid: fae083825ba974c219cbf38afc3e8fc2, type: 3}
+  - {fileID: 21300000, guid: 55da9b8d1cfa0498a9e097c30d3d6b59, type: 3}
+  - {fileID: 21300000, guid: 55f3c6c66d775411fac2a4394e5eb57e, type: 3}
+  - {fileID: 21300000, guid: 424777d2838ba497992d304a1ab2fa25, type: 3}
+  - {fileID: 21300000, guid: f3806520d2c9c4a16b572d978b85f376, type: 3}
+  - {fileID: 21300000, guid: 85cb9bf3aad274effa52fddae212f819, type: 3}
+  - {fileID: 21300000, guid: 504105acb266c4cdbb643290252dc77f, type: 3}
+  gameName: {fileID: 2104158460}
+--- !u!114 &1312141887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312141880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b54883e863414216bc03c1f942c4ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   languageList:
@@ -9541,9 +9582,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 678.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338798171
@@ -10339,7 +10380,6 @@ GameObject:
   - component: {fileID: 1451462860}
   - component: {fileID: 1451462862}
   - component: {fileID: 1451462861}
-  - component: {fileID: 1451462866}
   - component: {fileID: 1451462867}
   m_Layer: 5
   m_Name: GamePlayPanel
@@ -10347,7 +10387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1451462860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10412,74 +10452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451462859}
   m_CullTransparentMesh: 1
---- !u!114 &1451462866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451462859}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7ec46a816b947f1a4d68339bfa3439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGridSize: 0
-  MainContainer: {fileID: 2113328527}
-  BottomContainer: {fileID: 2060127544}
-  QPrefab: {fileID: 6539440106750791525, guid: 3282efac0f8574fc0bf130bfddff40d5, type: 3}
-  APrefab: {fileID: 4919596696978225035, guid: 638d57f4e8c464181aacb90dd3e5f7b6, type: 3}
-  ImagePrefabs:
-  - {fileID: 3881854134203206201, guid: 76392223bda194b0890357bde43077ba, type: 3}
-  - {fileID: 1185789350377126167, guid: 36ab0bc83cd7b438589c5aa67ae8e456, type: 3}
-  - {fileID: 1535569162822089736, guid: d336b58381a054680b4688510f298b50, type: 3}
-  - {fileID: 8368283960590898349, guid: d947c2eb0015e49d6988ba749aedc84b, type: 3}
-  - {fileID: 3881854134203206201, guid: 5f39ab232507540fe9ca3786a618a5f9, type: 3}
-  - {fileID: 865797155173937284, guid: e3dc58661c82248ceb196f51e8f8744e, type: 3}
-  - {fileID: 865797155173937284, guid: 7561a52b28d9c4531b81211112c9f788, type: 3}
-  - {fileID: 1385707741405279815, guid: c709c57d0b24b428f98d5cece1220b4b, type: 3}
-  - {fileID: 2938829775157048243, guid: b243e4710ef0e4fffba90538ab4aa126, type: 3}
-  - {fileID: 6631183966888323399, guid: f955fe8e1cdfd421a9f096b00f9d7a00, type: 3}
-  - {fileID: 6631183966888323399, guid: 31664cf554c9b49caac55590b964cc6a, type: 3}
-  - {fileID: 3881854134203206201, guid: aadcd84472a754c4a988c0ad7e437769, type: 3}
-  - {fileID: 6631183966888323399, guid: 03964d3fd4ad842459e6511dbe9349c2, type: 3}
-  - {fileID: 6631183966888323399, guid: 3dd64c643ebb142a1829036e6bfe8947, type: 3}
-  - {fileID: 6631183966888323399, guid: 6f29b33bc2b3d4efa8bdc9018f989dd7, type: 3}
-  - {fileID: 6631183966888323399, guid: 460794f6d220a41b2a976214ee235272, type: 3}
-  - {fileID: 6631183966888323399, guid: 3b88a6e87b7384cfa9bcd201f5806ed6, type: 3}
-  - {fileID: 865797155173937284, guid: 8afe9bcccdc4e4e42a6b7168db08b99b, type: 3}
-  - {fileID: 6631183966888323399, guid: 4a2dadb3e7c1e43e597c10638269889e, type: 3}
-  - {fileID: 1535569162822089736, guid: ab08547893b44417187c534306eacbf2, type: 3}
-  - {fileID: 1535569162822089736, guid: adcae62530709410eaa83e355e493a74, type: 3}
-  - {fileID: 1535569162822089736, guid: 65c3f2fd77515422aa47f0b2ce7f0c50, type: 3}
-  - {fileID: 1535569162822089736, guid: 7a34db2cc8c7c4ac0b641750f35e6c44, type: 3}
-  - {fileID: 1535569162822089736, guid: a805ecf7255924d0f8f422b1d1d0acaa, type: 3}
-  - {fileID: 1535569162822089736, guid: 36ae2f8476c5f47c4b51b5f99a11aeb4, type: 3}
-  - {fileID: 1535569162822089736, guid: 674246010ae3c4db09d058565e493012, type: 3}
-  - {fileID: 3881854134203206201, guid: d389e1e2ad8b643fe904c75522468ac4, type: 3}
-  - {fileID: 1535569162822089736, guid: 247258567c15d49c4922028868b2195e, type: 3}
-  - {fileID: 1535569162822089736, guid: 423e47a8a089d4764afcd86a110a9888, type: 3}
-  - {fileID: 8368283960590898349, guid: d9b312b540dbe49f1a61545de404737c, type: 3}
-  - {fileID: 3881854134203206201, guid: c91c11246e1f84a96b74b29f9f9f58fa, type: 3}
-  - {fileID: 865797155173937284, guid: b3fa320c35a294d6a95a4ed9a9279d45, type: 3}
-  - {fileID: 3881854134203206201, guid: 3822102873d204054a45efb9b4e8bbcf, type: 3}
-  - {fileID: 865797155173937284, guid: a6dd0730941c1411cb0eb7c5ecf94052, type: 3}
-  - {fileID: 3881854134203206201, guid: df522f023e00844ea98f1d831bb161b3, type: 3}
-  - {fileID: 8368283960590898349, guid: 1f33cef1d62a94c1e83560f22b8bcc46, type: 3}
-  - {fileID: 8368283960590898349, guid: 31c4f5e46660145bea1f8da7913ccb80, type: 3}
-  - {fileID: 8368283960590898349, guid: 4d67f6487d49845a99a036a6d57f1ba6, type: 3}
-  - {fileID: 3881854134203206201, guid: 185d4e724369e4f6a804fe8f16091ddf, type: 3}
-  - {fileID: 3881854134203206201, guid: d9672ae773e55422abb96e29cb966414, type: 3}
-  - {fileID: 865797155173937284, guid: 3e6a09a2d024448d682c30211db4e307, type: 3}
-  - {fileID: 8368283960590898349, guid: 3f896afcb70a94301a92ebffd91f4330, type: 3}
-  - {fileID: 6631183966888323399, guid: bee7048d479a04d18820f6ab778124be, type: 3}
-  - {fileID: 6631183966888323399, guid: 3e127c9fde99c4485b9bb2ae67447878, type: 3}
-  - {fileID: 865797155173937284, guid: 6c64cb7b5680649718acd57e677f18a7, type: 3}
-  - {fileID: 3881854134203206201, guid: 191d0a91f2c2e4eb7a34f47461141d97, type: 3}
-  findAndMatchLists: []
-  shouldPlay: 0
-  miniLevel: 0
-  isCreatingQuestion: 0
 --- !u!114 &1451462867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10525,8 +10497,6 @@ MonoBehaviour:
     shapes:
     - {fileID: -1961702732, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
     - {fileID: -1662278682, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
-    - {fileID: 1620276028, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
-    - {fileID: -2128823742, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
     - {fileID: -226736870, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
     - {fileID: 359759568, guid: 5448eaa6e07b74557a21903d6adac99a, type: 3}
     - {fileID: -1295464710, guid: 5448eaa6e07b74557a21903d6adac99a, type: 3}
@@ -10551,6 +10521,32 @@ MonoBehaviour:
     - {fileID: 1576067882, guid: cf5b973cd00384160a569073e3a32fb7, type: 3}
     - {fileID: -1896404540, guid: cf5b973cd00384160a569073e3a32fb7, type: 3}
     - {fileID: -1788734208, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
+  - color: red
+    basketColor: {r: 1, g: 0, b: 0, a: 1}
+    shapes:
+    - {fileID: 666233597, guid: 8e8f4ee27ec044710997130109d7198a, type: 3}
+    - {fileID: -2052723608, guid: 55d064eeb361e44c5922fc855e59afb1, type: 3}
+    - {fileID: 112521587, guid: ec48f6336a9464570b5ba8e497367c43, type: 3}
+    - {fileID: -284366515, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+    - {fileID: 616309681, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+    - {fileID: 1648916580, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+    - {fileID: -1609349697, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+    - {fileID: -401882001, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+    - {fileID: 84332797, guid: 55d064eeb361e44c5922fc855e59afb1, type: 3}
+    - {fileID: 258833819, guid: 7ac832a7cdf74415bb4c93aac565e942, type: 3}
+  - color: pink
+    basketColor: {r: 1, g: 0.7529412, b: 0.79607844, a: 1}
+    shapes:
+    - {fileID: 1372865780, guid: 8e8f4ee27ec044710997130109d7198a, type: 3}
+    - {fileID: 1454210244, guid: 55d064eeb361e44c5922fc855e59afb1, type: 3}
+    - {fileID: 2135773519, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: 1347499068, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -1668836282, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -1339137596, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -1072979903, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -360137714, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -1835166337, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
+    - {fileID: -199430008, guid: 73df630d52562458d9baacffd3d1f108, type: 3}
   baskets:
   - {fileID: 141590195}
   - {fileID: 755469882}
@@ -10684,8 +10680,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 838902072}
-        m_TargetAssemblyTypeName: MiniGame.FindAndMatch.GameManagerFind, Assembly-CSharp
+      - m_Target: {fileID: 838902073}
+        m_TargetAssemblyTypeName: MiniGame.WorldOfShape.GameManagerWorld, Assembly-CSharp
         m_MethodName: StartTheGame
         m_Mode: 1
         m_Arguments:
@@ -12381,6 +12377,7 @@ GameObject:
   - component: {fileID: 1822450084}
   - component: {fileID: 1822450082}
   - component: {fileID: 1822450088}
+  - component: {fileID: 1822450089}
   m_Layer: 0
   m_Name: ---AudioManager---
   m_TagString: Untagged
@@ -12507,9 +12504,152 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822450081}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29995c951449d49e081a4578b80812b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1822450082}
+  EnglishButtonClickSound:
+  - {fileID: 8300000, guid: 0efb9afee62e048849f02b9942586d82, type: 3}
+  - {fileID: 8300000, guid: 77337feb2f2d445568e06131c2c9ea69, type: 3}
+  - {fileID: 8300000, guid: 77337feb2f2d445568e06131c2c9ea69, type: 3}
+  - {fileID: 8300000, guid: 77337feb2f2d445568e06131c2c9ea69, type: 3}
+  - {fileID: 8300000, guid: fe9d517df3bcc49e5b57425e3f484946, type: 3}
+  - {fileID: 8300000, guid: 0053c170556d04fac99814a1af3b0720, type: 3}
+  - {fileID: 8300000, guid: f1319f0af7bd1480e9f8c916d2eef3ab, type: 3}
+  - {fileID: 8300000, guid: 1988bfde5ba2840b8bedf60d2bae7661, type: 3}
+  - {fileID: 8300000, guid: a5bb7c3e4b1634a69a22b4e1345f9b5c, type: 3}
+  - {fileID: 8300000, guid: b690d52364a2f430e8a251ff1f184172, type: 3}
+  - {fileID: 8300000, guid: c6f817221d0c3452ea07072d3b7ba240, type: 3}
+  - {fileID: 8300000, guid: 8aad3d66ee7114bc9996285921844525, type: 3}
+  - {fileID: 8300000, guid: dda60abe618e947c2a4ff55788799cf7, type: 3}
+  LithuanianButtonClickSounds:
+  - {fileID: 8300000, guid: e640ee5216bbc4a809f68c9a4a03273c, type: 3}
+  - {fileID: 8300000, guid: fb82a5aae35984054810d731c71b1c76, type: 3}
+  - {fileID: 8300000, guid: fb82a5aae35984054810d731c71b1c76, type: 3}
+  - {fileID: 8300000, guid: fb82a5aae35984054810d731c71b1c76, type: 3}
+  - {fileID: 8300000, guid: 190a76375ad7e452dbfcfddd4c489703, type: 3}
+  - {fileID: 8300000, guid: 3cd57618529fc4e8d8318c4df0233465, type: 3}
+  - {fileID: 8300000, guid: c9663ff5e9ab4490b8c089d198fcf76b, type: 3}
+  - {fileID: 8300000, guid: d0e7554310b584d73b7362fda8369f4e, type: 3}
+  - {fileID: 8300000, guid: 272b58bc3648648598f804765a32ffed, type: 3}
+  - {fileID: 8300000, guid: 7d6365a905f624456a6630ab8c64b6a6, type: 3}
+  - {fileID: 8300000, guid: ecbb531d9b1034f569bf36e0a2256929, type: 3}
+  - {fileID: 8300000, guid: 1345e6ed46ac24fc98f28177e963c47e, type: 3}
+  - {fileID: 8300000, guid: ed9abfd7c2b364454baed2c59790710f, type: 3}
+  EstonianButtonClickSounds:
+  - {fileID: 8300000, guid: 9f46a90a92cfd437cb0c3bfd9712b549, type: 3}
+  - {fileID: 8300000, guid: 4673a27bc6a094a258be31fb268ff049, type: 3}
+  - {fileID: 8300000, guid: 4673a27bc6a094a258be31fb268ff049, type: 3}
+  - {fileID: 8300000, guid: 4673a27bc6a094a258be31fb268ff049, type: 3}
+  - {fileID: 8300000, guid: c28f92f3d6fbc4f1a904419667ef482b, type: 3}
+  - {fileID: 8300000, guid: 1330f3ea72d904ef8a39add876e4a05b, type: 3}
+  - {fileID: 8300000, guid: 472ea58ee40fb40269cc70c5c4275a1c, type: 3}
+  - {fileID: 8300000, guid: 9538c82e5b9cf4519b3a644157867f8e, type: 3}
+  - {fileID: 8300000, guid: 3182382898a724ef29c11c0ee3b943ef, type: 3}
+  - {fileID: 8300000, guid: 689207e50b4d94128a04eba6d6594a2c, type: 3}
+  - {fileID: 8300000, guid: cd73dfc9fac9542048037ba564c95d06, type: 3}
+  - {fileID: 8300000, guid: 727382c1a425444348de8a4a9eb929b3, type: 3}
+  - {fileID: 8300000, guid: c4cfcece035914d998314edd0cdb9dd0, type: 3}
+  LatvianButtonClickSounds:
+  - {fileID: 8300000, guid: 2e3d65e81b56849b1a60692b3a41cc4b, type: 3}
+  - {fileID: 8300000, guid: 7ff03762ad6d843c0b927f2d517f7f37, type: 3}
+  - {fileID: 8300000, guid: 7ff03762ad6d843c0b927f2d517f7f37, type: 3}
+  - {fileID: 8300000, guid: 7ff03762ad6d843c0b927f2d517f7f37, type: 3}
+  - {fileID: 8300000, guid: c149a666c738844f69c877ac8c3a2dca, type: 3}
+  - {fileID: 8300000, guid: 17a6f0dcae02a4cd284e574bd367635d, type: 3}
+  - {fileID: 8300000, guid: 48b3cc4cd15fd4c198b590a0ecbe7356, type: 3}
+  - {fileID: 8300000, guid: 44b2fb6ddc2274b328579fd861682eb1, type: 3}
+  - {fileID: 8300000, guid: 43cb75a7f3a4e4155a537db2e03e0d61, type: 3}
+  - {fileID: 8300000, guid: c8dbf92656996454b92880719143aac4, type: 3}
+  - {fileID: 8300000, guid: 278811df80e9d4a13b731f7d2079ead0, type: 3}
+  - {fileID: 8300000, guid: 7b4967635b064454bb99b4fec6cb1488, type: 3}
+  - {fileID: 8300000, guid: 41a8387a8f5f643c28882cc6a5887202, type: 3}
+  PolishButtonClickSounds:
+  - {fileID: 8300000, guid: 7cd612b5101904ecda7501d906962822, type: 3}
+  - {fileID: 8300000, guid: 8a5a2ac48c6f44b1caa951535b3d76f0, type: 3}
+  - {fileID: 8300000, guid: 8a5a2ac48c6f44b1caa951535b3d76f0, type: 3}
+  - {fileID: 8300000, guid: 8a5a2ac48c6f44b1caa951535b3d76f0, type: 3}
+  - {fileID: 8300000, guid: 1157fce0d188345b99f01965a5cb4e43, type: 3}
+  - {fileID: 8300000, guid: 20f2c89e75e1840dfb4773403ec738a2, type: 3}
+  - {fileID: 8300000, guid: 97a09293661c941f698a3e60ae1bb600, type: 3}
+  - {fileID: 8300000, guid: c788469e8b8eb48908be0cc3416ce625, type: 3}
+  - {fileID: 8300000, guid: e575f46cb518749a79864393e5ca46fe, type: 3}
+  - {fileID: 8300000, guid: bcf3047e1f45942689b8c06fff0e5278, type: 3}
+  - {fileID: 8300000, guid: bd20b6e442b9b49de9247ed52a34dbb1, type: 3}
+  - {fileID: 8300000, guid: 28df7a3f179c64fde8472e1263e97e35, type: 3}
+  - {fileID: 8300000, guid: 6c65629b5274b4518931f22bf45ef8fc, type: 3}
+  CzechButtonClickSounds:
+  - {fileID: 8300000, guid: 8f47ec2f2327247eea37c028750d8309, type: 3}
+  - {fileID: 8300000, guid: 0d6cab73587c84040b636ffde8d37ee7, type: 3}
+  - {fileID: 8300000, guid: 0d6cab73587c84040b636ffde8d37ee7, type: 3}
+  - {fileID: 8300000, guid: 0d6cab73587c84040b636ffde8d37ee7, type: 3}
+  - {fileID: 8300000, guid: f994f3533b5714ded9f0e47c54323f9e, type: 3}
+  - {fileID: 8300000, guid: aa4afa363c6de49ac9f78a522438cd20, type: 3}
+  - {fileID: 8300000, guid: c9568d5c3a8a546a198a6d43656e81d3, type: 3}
+  - {fileID: 8300000, guid: a50d91bf96eb441e8b3b519e62c403cf, type: 3}
+  - {fileID: 8300000, guid: bfe6a438dfc2c47f68baa87f73986725, type: 3}
+  - {fileID: 8300000, guid: 945b7faafffea4e6d820be5d211cdbd7, type: 3}
+  - {fileID: 8300000, guid: c392eca36f2f24f0a817de09cd2ad20e, type: 3}
+  - {fileID: 8300000, guid: d08cb0ea07d984e7bb6cca434e3fe4a1, type: 3}
+  - {fileID: 8300000, guid: 2ec87eb6e99754a9c8a8b2356c28c329, type: 3}
+  SlovakButtonClickSounds:
+  - {fileID: 8300000, guid: e1c0c535681344f56b7314c70e86111c, type: 3}
+  - {fileID: 8300000, guid: 25d7d465836e24c3dab182ebebec3afb, type: 3}
+  - {fileID: 8300000, guid: 25d7d465836e24c3dab182ebebec3afb, type: 3}
+  - {fileID: 8300000, guid: 25d7d465836e24c3dab182ebebec3afb, type: 3}
+  - {fileID: 8300000, guid: 6127ebdb256724c0795d9c2dee0e22a5, type: 3}
+  - {fileID: 8300000, guid: 29b22ad28f4b74c3abb9bba09ab5097d, type: 3}
+  - {fileID: 8300000, guid: a1f11f57c582a42b99bbaf204635a19c, type: 3}
+  - {fileID: 8300000, guid: 2e9ad01e8f0284156888315d54bd0bf8, type: 3}
+  - {fileID: 8300000, guid: 1f9266de833254efaad51506cb813242, type: 3}
+  - {fileID: 8300000, guid: 7467040407ccc4b64816a20856bea194, type: 3}
+  - {fileID: 8300000, guid: f33a598e9617445719794bdc8d3201e6, type: 3}
+  - {fileID: 8300000, guid: f76b5b1edc0c845a382448f66816c8b1, type: 3}
+  - {fileID: 8300000, guid: ea06a837b5ef5414a9e0fa719d01354c, type: 3}
+  RandomSounds:
+  - {fileID: 8300000, guid: 202c0d8869248447eb9d4e9ebcc0f80f, type: 3}
+  sprites: []
+  GameSoundButton: {fileID: 1795498971}
+  ObjectSoundButton: {fileID: 301023160}
+  BgmusicSource: {fileID: 626632265}
+  langaugeIndex: 0
+  activeLanguageButton: {fileID: 1600531304}
+  ActiveLanguageBackground: {fileID: 1154689097}
+  DropDownMenu: {fileID: 544885878}
+  flags:
+  - name: English
+    sprite: {fileID: 21300000, guid: 262a2f773e9df4bf290452930598d650, type: 3}
+  - name: lithuanian
+    sprite: {fileID: 21300000, guid: c47a7b1aa20db4692970989d1081f3f7, type: 3}
+  - name: Estonian
+    sprite: {fileID: 21300000, guid: cbc1561e7a50d49fe882046b8c57c19e, type: 3}
+  - name: Latvian
+    sprite: {fileID: 21300000, guid: 92a2a5863c7e842eb851b7c404d0e4d6, type: 3}
+  - name: Polish
+    sprite: {fileID: 21300000, guid: 5b99c82c2921e42b5893b9c04744513f, type: 3}
+  - name: Czech
+    sprite: {fileID: 21300000, guid: 961cad548bff34c6fbfd1c5c971f7c7d, type: 3}
+  - name: Slovak
+    sprite: {fileID: 21300000, guid: 12bec5409000a41b2b0f4602696d0f4e, type: 3}
+  logos: []
+  MainLogoContainer: {fileID: 1732929872}
+  gamePlayLogo: {fileID: 1795386401}
+  gamePlayLogo2: {fileID: 1371169617}
+  currentLanguage: 0
+  numericSound: 1
+  gameSound: 1
+--- !u!114 &1822450089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822450081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574f0aa1734244ee084fe3d25522ad60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1822450082}
@@ -12925,9 +13065,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 781.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858575316
@@ -13715,9 +13855,9 @@ RectTransform:
   m_Father: {fileID: 1253335741}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 369.5, y: -76.5}
   m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083661777

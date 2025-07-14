@@ -2,11 +2,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MiniGame.FindAndMatch
+namespace MiniGame.WorldOfShape
 {
 
 
-    public class AudioManagerFind : MonoBehaviour
+    public class AudioManagerWorld : MonoBehaviour
     {
         public AudioSource audioSource;
         public AudioClip[] EnglishButtonClickSound;
@@ -21,7 +21,7 @@ namespace MiniGame.FindAndMatch
 
         public AudioClip[] RandomSounds;
       
-        public static AudioManagerFind instance;
+        public static AudioManagerWorld instance;
         public Sprite[] sprites;
         public GameObject GameSoundButton;
         public GameObject ObjectSoundButton;
@@ -197,7 +197,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.English;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
 
@@ -217,7 +217,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Lithuanian;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
             gamePlayLogo.SetActive(false);
             gamePlayLogo2.SetActive(true);
             MainLogoContainer.transform.GetChild(0).gameObject.SetActive(true);
@@ -234,7 +234,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Estonian;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
 
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
@@ -255,7 +255,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Latvian;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
 
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
@@ -275,7 +275,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Polish;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
 
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
@@ -292,7 +292,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Czech;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
 
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
@@ -309,7 +309,7 @@ namespace MiniGame.FindAndMatch
             Handheld.Vibrate();
             PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             currentLanguage = LanguagesType.Slovak;
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
 
             gamePlayLogo.SetActive(true);
             gamePlayLogo2.SetActive(false);
@@ -341,15 +341,15 @@ namespace MiniGame.FindAndMatch
                 PlayerPrefs.SetInt("PLanguageIndex", langaugeIndex);
             }
             SetLangauage();
-            TextManagerFind.instance.OnChangeLanguage();
+            TextManagerWorld.instance.OnChangeLanguage();
         }
 
     }
 
 }
-// [System.Serializable]
-// public class CustomFlag
-// {
-//     public string name;
-//     public Sprite sprite;
-// }
+[System.Serializable]
+public class CustomFlag
+{
+    public string name;
+    public Sprite sprite;
+}

@@ -19,6 +19,8 @@ namespace MiniGame.WorldOfShape
         public GridLayoutGroup gridLayoutGroup;
         private Coroutine shuffleCoRoutine;
         public int ansSolvedCount = 0;
+        private bool isCreatingQuestion = false;
+
 
 
         void Awake()
@@ -36,7 +38,8 @@ namespace MiniGame.WorldOfShape
         // Start is called before the first frame update
         void Start()
         {
-            CreateQuestion();
+            // CreateQuestion();
+            StartCoroutine(CheckIfSolveSafe());
         }
 
         // Update is called once per frame
@@ -48,6 +51,7 @@ namespace MiniGame.WorldOfShape
 
         public void CreateQuestion()
         {
+            if (isCreatingQuestion) return;
             StartCoroutine(CreateQuestionCoroutine());
         }
         // IEnumerator CreateQuestionCoroutine()
@@ -96,6 +100,7 @@ namespace MiniGame.WorldOfShape
 
         IEnumerator CreateQuestionCoroutine()
         {
+            isCreatingQuestion = true;
             Coroutine up = StartCoroutine(ClearChilds());
             yield return up;
 
@@ -158,6 +163,7 @@ namespace MiniGame.WorldOfShape
             }
             ShuffleBottomContainerChildren();
             gridLayoutGroup.enabled = false;
+            isCreatingQuestion = false;
         }
 
         List<int> Select3RandomNo()
@@ -272,7 +278,7 @@ namespace MiniGame.WorldOfShape
                 });
                 yield return new WaitForSeconds(0.3f);
             }
-            yield return new WaitForSeconds(0.3f);
+            // yield return new WaitForSeconds(0.3f);
             for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
             {
                 LeanTween.scale(BottomContainer.transform.GetChild(i).gameObject, Vector3.zero, 0.5f);
@@ -287,7 +293,7 @@ namespace MiniGame.WorldOfShape
                 .transform.childCount - 1; j >= 0; j--)
                 {
                     Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
-                    DestroyImmediate(myChild.gameObject);
+                    Destroy(myChild.gameObject);
                     yield return new WaitForEndOfFrame();
                 }
 
@@ -297,7 +303,16 @@ namespace MiniGame.WorldOfShape
 
 
 
-
+        public IEnumerator CheckIfSolveSafe()
+        {
+            while (true)
+            {
+                
+            yield return new WaitForSeconds(3f);
+            Debug.Log("CheckIfSolveSafe");
+            isSolved(8);
+            }
+        }
 
 
         public void isSolved(int ans)
@@ -310,25 +325,30 @@ namespace MiniGame.WorldOfShape
                 .transform.childCount - 1; j >= 0; j--)
                 {
                     // Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
+                    Transform basket = BottomContainer.transform.GetChild(i).GetChild(0);
+                    Debug.Log($"Basket {i} contains {basket.childCount} children");
                     count++;
+                    Debug.Log(count);
+                    Debug.Log(isCreatingQuestion);
                 }
             }
-            if (count >= ans)
+            if (count >= ans && !isCreatingQuestion)
             {
                 CreateQuestion();
             }
+
         }
     }
 }
 
-    [System.Serializable]
-    public class ColorList
-    {
-        public string color;
-        public Color basketColor;
+[System.Serializable]
+public class ColorList
+{
+    public string color;
+    public Color basketColor;
 
-        public List<Sprite> shapes;
-    }
+    public List<Sprite> shapes;
+}
 
 
 

@@ -2,19 +2,19 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
 
-namespace MiniGame.FindAndMatch
+namespace MiniGame.WorldOfShape
 {
     using UnityEngine;
     using TMPro;
     using UnityEngine.UI;
 
-    public class TextManagerFind : MonoBehaviour
+    public class TextManagerWorld : MonoBehaviour
     {
         public LanguageList languageList;
 
         public TextInputSt[] textInputs;
 
-        public static TextManagerFind instance;
+        public static TextManagerWorld instance;
         public Sprite[] gameNames;
         public Image gameName;
 
@@ -36,7 +36,7 @@ namespace MiniGame.FindAndMatch
         {
             PopulateLnagauages();
             FirstLogin();
-            if (AudioManagerFind.instance != null)
+            if (AudioManagerWorld.instance != null)
             {
                 OnChangeLanguage();
             }
@@ -44,47 +44,47 @@ namespace MiniGame.FindAndMatch
         }
         public void FirstLogin()
         {
-            if (AudioManagerFind.instance != null)
+            if (AudioManagerWorld.instance != null)
             {
                 if (!PlayerPrefs.HasKey("language_set"))
                 {
                     switch (Application.systemLanguage)
                     {
                         case SystemLanguage.English:
-                            AudioManagerFind.instance.IncrementToLanguage0();
+                            AudioManagerWorld.instance.IncrementToLanguage0();
                             Debug.Log("English");
                             break;
                         case SystemLanguage.Lithuanian:
-                            AudioManagerFind.instance.IncrementToLanguage1();
+                            AudioManagerWorld.instance.IncrementToLanguage1();
                             Debug.Log("Lithuanian");
                             break;
                         case SystemLanguage.Estonian:
-                            AudioManagerFind.instance.IncrementToLanguage2();
+                            AudioManagerWorld.instance.IncrementToLanguage2();
 
                             Debug.Log("Estonian");
                             break;
                         case SystemLanguage.Latvian:
-                            AudioManagerFind.instance.IncrementToLanguage3();
+                            AudioManagerWorld.instance.IncrementToLanguage3();
 
                             Debug.Log("Latvian");
                             break;
                         case SystemLanguage.Polish:
-                            AudioManagerFind.instance.IncrementToLanguage4();
+                            AudioManagerWorld.instance.IncrementToLanguage4();
 
                             Debug.Log("Polish");
                             break;
                         case SystemLanguage.Czech:
-                            AudioManagerFind.instance.IncrementToLanguage5();
+                            AudioManagerWorld.instance.IncrementToLanguage5();
 
                             Debug.Log("Czech");
                             break;
                         case SystemLanguage.Slovak:
-                            AudioManagerFind.instance.IncrementToLangaue6();
+                            AudioManagerWorld.instance.IncrementToLangaue6();
 
                             Debug.Log("Slovak");
                             break;
                         default:
-                            AudioManagerFind.instance.IncrementToLanguage0();
+                            AudioManagerWorld.instance.IncrementToLanguage0();
                             break;
                     }
 
@@ -98,9 +98,9 @@ namespace MiniGame.FindAndMatch
         }
         public void OnChangeLanguage()
         {
-            switch (AudioManagerFind.instance.currentLanguage)
+            switch (AudioManagerWorld.instance.currentLanguage)
             {
-                case AudioManagerFind.LanguagesType.English:
+                case AudioManagerWorld.LanguagesType.English:
                     {
 
                         for (int i = 0; i < textInputs.Length; i++)
@@ -113,7 +113,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Lithuanian:
+                case AudioManagerWorld.LanguagesType.Lithuanian:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -127,7 +127,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Estonian:
+                case AudioManagerWorld.LanguagesType.Estonian:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -140,7 +140,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Latvian:
+                case AudioManagerWorld.LanguagesType.Latvian:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -153,7 +153,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Polish:
+                case AudioManagerWorld.LanguagesType.Polish:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -166,7 +166,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Czech:
+                case AudioManagerWorld.LanguagesType.Czech:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -178,7 +178,7 @@ namespace MiniGame.FindAndMatch
 
                     }
                     break;
-                case AudioManagerFind.LanguagesType.Slovak:
+                case AudioManagerWorld.LanguagesType.Slovak:
                     {
                         for (int i = 0; i < textInputs.Length; i++)
                         {
@@ -213,3 +213,22 @@ namespace MiniGame.FindAndMatch
     }
 }
 
+[System.Serializable]
+public class LanguageData
+{
+    public string name;
+    public List<string> lines;
+}
+
+[System.Serializable]
+public class LanguageList
+{
+    public List<LanguageData> languages;
+}
+
+[System.Serializable]
+public class TextInputSt
+{
+    public string name;
+    public TextMeshProUGUI text;
+}
