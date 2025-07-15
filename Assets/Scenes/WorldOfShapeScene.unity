@@ -7399,6 +7399,7 @@ GameObject:
   - component: {fileID: 1106132455}
   - component: {fileID: 1106132457}
   - component: {fileID: 1106132458}
+  - component: {fileID: 1106132459}
   m_Layer: 5
   m_Name: LevelClearedPanel
   m_TagString: Untagged
@@ -7488,7 +7489,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106132453}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a5a2ac48c6f44b1caa951535b3d76f0, type: 3}
@@ -7577,6 +7578,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1106132459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106132453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d18d79d39d3347e4ab9c1b55c2f37a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Decoration: {fileID: 1320387470}
+  greatContainer: {fileID: 193014694}
 --- !u!1 &1107353982
 GameObject:
   m_ObjectHideFlags: 0
@@ -8595,6 +8610,7 @@ GameObject:
   - component: {fileID: 1253335741}
   - component: {fileID: 1253335742}
   - component: {fileID: 1253335745}
+  - component: {fileID: 1253335746}
   m_Layer: 5
   m_Name: StarsContainer
   m_TagString: Untagged
@@ -8668,6 +8684,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c8228a3199dc40d2a7df7c709323de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stars:
+  - {fileID: 934095655}
+  - {fileID: 797927582}
+  - {fileID: 30316909}
+  - {fileID: 2083661775}
+  - {fileID: 715131474}
+  - {fileID: 833918295}
+  - {fileID: 1338798169}
+  - {fileID: 1858575314}
+  - {fileID: 952228011}
+  - {fileID: 477688578}
+  starStates: []
+  goldenStar: {fileID: 21300000, guid: eb6ae18958ec44c82a41cd1111f21ce7, type: 3}
+  normalStar: {fileID: 21300000, guid: 4c983c4ef5e694466a64064fd63c3363, type: 3}
+  starScaleSize: 1.1
+--- !u!114 &1253335746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253335740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc61e7b27bf404972a3b34c021a99299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stars:
@@ -10514,7 +10557,10 @@ MonoBehaviour:
   AnsPrefab: {fileID: 8618856407222528467, guid: 6f2bbffc6b4c2428a9e8135414c99e71, type: 3}
   BottomContainer: {fileID: 2060127544}
   gridLayoutGroup: {fileID: 0}
+  miniLevel: 0
   ansSolvedCount: 0
+  isCreatingQuestion: 0
+  currentQuestionSolved: 0
 --- !u!1 &1463858522
 GameObject:
   m_ObjectHideFlags: 0
@@ -13950,7 +13996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.165, y: 0.23300001}
   m_AnchorMax: {x: 0.8148519, y: 0.7717058}
-  m_AnchoredPosition: {x: -0.93408203, y: -0.8862915}
+  m_AnchoredPosition: {x: -0.93408203, y: -0.88635254}
   m_SizeDelta: {x: 3.868164, y: 11.772278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113328530

@@ -18,9 +18,13 @@ namespace MiniGame.WorldOfShape
         public static GamePlayPanelWorld instance;
         public GridLayoutGroup gridLayoutGroup;
         private Coroutine shuffleCoRoutine;
+        public int miniLevel = 0;
+
         public int ansSolvedCount = 0;
-        private bool isCreatingQuestion = false;
-        
+        public bool isCreatingQuestion = false;
+        public bool currentQuestionSolved = false;
+
+
 
 
 
@@ -165,6 +169,7 @@ namespace MiniGame.WorldOfShape
             ShuffleBottomContainerChildren();
             gridLayoutGroup.enabled = false;
             isCreatingQuestion = false;
+            currentQuestionSolved = false;
         }
 
         List<int> Select3RandomNo()
@@ -252,17 +257,17 @@ namespace MiniGame.WorldOfShape
             // Handheld.Vibrate();
             // // StopCoroutine(createQuestionRoutine);
 
-            // bool isLevelCleared = GameManagerFind.instance.IsLevelCleared(9);
+            // bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
             // miniLevel = 0;
             // if (isLevelCleared)
             // {
-            //     GameManagerFind.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+            //     GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
             //     return;
             // }
             AudioManagerWorld.instance.PlayButtonSound(6);
 
-            // StarsContainerFind.instance.LevelSkipped(GameManagerFind.instance.clearedLevels);
-            // GameManagerFind.instance.clearedLevels++;
+            // StarsContainerFind.instance.LevelSkipped(GameManagerWorld.instance.clearedLevels);
+            // GameManagerWorld.instance.clearedLevels++;
             // isCreatingQuestion = false;
             CreateQuestion();
 
@@ -309,36 +314,88 @@ namespace MiniGame.WorldOfShape
             while (true)
             {
 
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
                 Debug.Log("CheckIfSolveSafe");
                 isSolved(8);
             }
         }
 
 
+        // public void isSolved(int ans)
+        // {
+        //     int count = 0;
+        //     for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
+        //     {
+
+        //         for (int j = BottomContainer.transform.GetChild(i).transform.GetChild(0)
+        //         .transform.childCount - 1; j >= 0; j--)
+        //         {
+        //             // Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
+        //             Transform basket = BottomContainer.transform.GetChild(i).GetChild(0);
+        //             Debug.Log($"Basket {i} contains {basket.childCount} children");
+        //             count++;
+        //             Debug.Log(count);
+        //             Debug.Log(isCreatingQuestion);
+        //         }
+        //     }
+        //     if (count >= ans && !isCreatingQuestion)
+        //     {
+        //         StarsContainerWorld.instance.MiniLevelCleared(GameManagerWorld.instance.clearedLevels, miniLevel);
+        //         if (isCreatingQuestion) return;
+        //         if(currentQuestionSolved) return;
+        //             currentQuestionSolved = true;
+
+        //         miniLevel++;
+        //         if (miniLevel >= StarsContainerWorld.MINI_LEVEL_TARGET)
+        //         {
+        //             miniLevel = 0;
+        //             bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
+
+        //             // if (isLevelCleared)
+        //             // {
+        //             //     GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+        //             //     // yield break; // Stop coroutine when level finishes
+        //             //     continue;
+        //             // }
+        //             StarsContainerWorld.instance.LevelCleared(GameManagerWorld.instance.clearedLevels);
+        //             GameManagerWorld.instance.clearedLevels++;
+        //             CreateQuestion();
+        //         }
+
+        //     }
+        // }
         public void isSolved(int ans)
         {
+            if (isCreatingQuestion || currentQuestionSolved)
+                return;
+
             int count = 0;
             for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
             {
-
-                for (int j = BottomContainer.transform.GetChild(i).transform.GetChild(0)
-                .transform.childCount - 1; j >= 0; j--)
-                {
-                    // Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
-                    Transform basket = BottomContainer.transform.GetChild(i).GetChild(0);
-                    Debug.Log($"Basket {i} contains {basket.childCount} children");
-                    count++;
-                    Debug.Log(count);
-                    Debug.Log(isCreatingQuestion);
-                }
+                Transform basket = BottomContainer.transform.GetChild(i).GetChild(0);
+                Debug.Log($"Basket {i} contains {basket.childCount} children");
+                count += basket.childCount;
             }
-            if (count >= ans && !isCreatingQuestion)
+
+            if (count >= ans)
             {
+                currentQuestionSolved = true; // 🔐 Lock this question as solved
+                StarsContainerWorld.instance.MiniLevelCleared(GameManagerWorld.instance.clearedLevels, miniLevel);
+                miniLevel++;
+
+                if (miniLevel >= StarsContainerWorld.MINI_LEVEL_TARGET)
+                {
+                    miniLevel = 0;
+
+                    bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
+                    StarsContainerWorld.instance.LevelCleared(GameManagerWorld.instance.clearedLevels);
+                    GameManagerWorld.instance.clearedLevels++;
+                }
+
                 CreateQuestion();
             }
-
         }
+
     }
 }
 
