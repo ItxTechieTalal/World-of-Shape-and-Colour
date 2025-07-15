@@ -17,6 +17,7 @@ namespace MiniGame.WorldOfShape
         public Image myImage;
         public bool canBeDraged = true;
         private bool isSnapping = false;
+        public bool playOnce = true;
 
 
 
@@ -123,6 +124,11 @@ namespace MiniGame.WorldOfShape
             // Final placement
             transform.localPosition = new Vector3(0, -150, 0);
             transform.localScale = targetScale;
+            if (playOnce)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(transform.parent.parent.GetComponent<BasketScriptWorld>().musicIndex);
+                playOnce = false;
+            }
         }
 
 
@@ -158,7 +164,12 @@ namespace MiniGame.WorldOfShape
                     canBeDraged = false;
                     this.transform.parent = eventData.pointerEnter.transform.GetChild(0).transform;
                     this.transform.localPosition = new Vector3(0, -150, 0);
-                    LeanTween.scale(img.gameObject, Vector3.one * 0.8f, 0.3f).setLoopPingPong(2) .setEase(LeanTweenType.easeInOutSine).setOnComplete(() => img.transform.localScale = Vector3.one);
+                    LeanTween.scale(img.gameObject, Vector3.one * 0.8f, 0.3f).setLoopPingPong(2).setEase(LeanTweenType.easeInOutSine).setOnComplete(() => img.transform.localScale = Vector3.one);
+                    if (playOnce)
+                    {
+                        AudioManagerWorld.instance.PlayButtonSound(transform.parent.parent.GetComponent<BasketScriptWorld>().musicIndex);
+                        playOnce = false;
+                    }
                     // LeanTween.delayedCall(1f, () =>
                     // {
                     //     if (img != null)

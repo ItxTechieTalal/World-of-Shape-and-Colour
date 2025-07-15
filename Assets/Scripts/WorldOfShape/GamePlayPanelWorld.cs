@@ -125,6 +125,7 @@ namespace MiniGame.WorldOfShape
                 newItem.color = item.color;
                 newItem.basketColor = item.basketColor;
                 newItem.shapes = new List<Sprite>(item.shapes); // New list of sprites
+                newItem.musicIndex = item.musicIndex;
                 cloneList.Add(newItem);
             }
             List<int> randomIndexList = Select3RandomNo();
@@ -139,6 +140,8 @@ namespace MiniGame.WorldOfShape
                 // 🟩 Set the basket color
                 if (group < baskets.Count)
                 {
+                    baskets[group].GetComponent<BasketScriptWorld>().musicIndex = colorList.musicIndex;
+                    Debug.Log("musicIndex: " + baskets[group].GetComponent<BasketScriptWorld>().musicIndex);
                     baskets[group].color = colorList.basketColor;
                     baskets[group].name = group.ToString();
                 }
@@ -252,22 +255,22 @@ namespace MiniGame.WorldOfShape
 
         public void SkipButton()
         {
-            // LeanTween.cancelAll();
-            // isCreatingQuestion = true;
-            // Handheld.Vibrate();
-            // // StopCoroutine(createQuestionRoutine);
+            LeanTween.cancelAll();
+            isCreatingQuestion = true;
+            Handheld.Vibrate();
+            // StopCoroutine(createQuestionRoutine);
 
-            // bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
-            // miniLevel = 0;
-            // if (isLevelCleared)
-            // {
-            //     GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
-            //     return;
-            // }
+            bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
+            miniLevel = 0;
+            if (isLevelCleared)
+            {
+                GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+                return;
+            }
             AudioManagerWorld.instance.PlayButtonSound(6);
 
-            // StarsContainerFind.instance.LevelSkipped(GameManagerWorld.instance.clearedLevels);
-            // GameManagerWorld.instance.clearedLevels++;
+            StarsContainerWorld.instance.LevelSkipped(GameManagerWorld.instance.clearedLevels);
+            GameManagerWorld.instance.clearedLevels++;
             // isCreatingQuestion = false;
             CreateQuestion();
 
@@ -320,50 +323,7 @@ namespace MiniGame.WorldOfShape
             }
         }
 
-
-        // public void isSolved(int ans)
-        // {
-        //     int count = 0;
-        //     for (int i = BottomContainer.transform.childCount - 1; i >= 0; i--)
-        //     {
-
-        //         for (int j = BottomContainer.transform.GetChild(i).transform.GetChild(0)
-        //         .transform.childCount - 1; j >= 0; j--)
-        //         {
-        //             // Transform myChild = BottomContainer.transform.GetChild(i).transform.GetChild(0).transform.GetChild(j);
-        //             Transform basket = BottomContainer.transform.GetChild(i).GetChild(0);
-        //             Debug.Log($"Basket {i} contains {basket.childCount} children");
-        //             count++;
-        //             Debug.Log(count);
-        //             Debug.Log(isCreatingQuestion);
-        //         }
-        //     }
-        //     if (count >= ans && !isCreatingQuestion)
-        //     {
-        //         StarsContainerWorld.instance.MiniLevelCleared(GameManagerWorld.instance.clearedLevels, miniLevel);
-        //         if (isCreatingQuestion) return;
-        //         if(currentQuestionSolved) return;
-        //             currentQuestionSolved = true;
-
-        //         miniLevel++;
-        //         if (miniLevel >= StarsContainerWorld.MINI_LEVEL_TARGET)
-        //         {
-        //             miniLevel = 0;
-        //             bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
-
-        //             // if (isLevelCleared)
-        //             // {
-        //             //     GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
-        //             //     // yield break; // Stop coroutine when level finishes
-        //             //     continue;
-        //             // }
-        //             StarsContainerWorld.instance.LevelCleared(GameManagerWorld.instance.clearedLevels);
-        //             GameManagerWorld.instance.clearedLevels++;
-        //             CreateQuestion();
-        //         }
-
-        //     }
-        // }
+    
         public void isSolved(int ans)
         {
             if (isCreatingQuestion || currentQuestionSolved)
@@ -406,6 +366,7 @@ public class ColorList
     public Color basketColor;
 
     public List<Sprite> shapes;
+    public int musicIndex;
 }
 
 
