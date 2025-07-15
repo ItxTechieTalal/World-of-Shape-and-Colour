@@ -255,8 +255,8 @@ namespace MiniGame.WorldOfShape
 
         public void SkipButton()
         {
-            LeanTween.cancelAll();
-            isCreatingQuestion = true;
+            // LeanTween.cancelAll();
+            // isCreatingQuestion = true;
             Handheld.Vibrate();
             // StopCoroutine(createQuestionRoutine);
 
@@ -272,7 +272,10 @@ namespace MiniGame.WorldOfShape
             StarsContainerWorld.instance.LevelSkipped(GameManagerWorld.instance.clearedLevels);
             GameManagerWorld.instance.clearedLevels++;
             // isCreatingQuestion = false;
+            if (isCreatingQuestion == false)
+            {
             CreateQuestion();
+            }
 
         }
 
@@ -349,6 +352,11 @@ namespace MiniGame.WorldOfShape
 
                     bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
                     StarsContainerWorld.instance.LevelCleared(GameManagerWorld.instance.clearedLevels);
+                    if (isLevelCleared)
+                    {
+                        GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+                        return;
+                    }
                     GameManagerWorld.instance.clearedLevels++;
                 }
 
