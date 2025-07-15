@@ -23,6 +23,7 @@ namespace MiniGame.WorldOfShape
         public int ansSolvedCount = 0;
         public bool isCreatingQuestion = false;
         public bool currentQuestionSolved = false;
+        public Coroutine createQuestionRoutine;
 
 
 
@@ -57,7 +58,7 @@ namespace MiniGame.WorldOfShape
         public void CreateQuestion()
         {
             if (isCreatingQuestion) return;
-            StartCoroutine(CreateQuestionCoroutine());
+         createQuestionRoutine =   StartCoroutine(CreateQuestionCoroutine());
         }
         // IEnumerator CreateQuestionCoroutine()
         // {
@@ -109,6 +110,16 @@ namespace MiniGame.WorldOfShape
             Coroutine up = StartCoroutine(ClearChilds());
             yield return up;
 
+            yield return new WaitForSeconds(0.2f);
+
+            if (parent.transform.childCount >0)
+            {
+                Debug.LogWarning("Too many children in parent! Forcing cleanup.");
+                for (int i = parent.transform.childCount - 1; i >= 0; i--)
+                {
+                    Destroy(parent.transform.GetChild(i).gameObject);
+                }
+            }
             gridLayoutGroup.enabled = true;
 
             if (shapes.Count < 3)
@@ -173,6 +184,7 @@ namespace MiniGame.WorldOfShape
             gridLayoutGroup.enabled = false;
             isCreatingQuestion = false;
             currentQuestionSolved = false;
+            createQuestionRoutine = null;
         }
 
         List<int> Select3RandomNo()
@@ -258,13 +270,15 @@ namespace MiniGame.WorldOfShape
             // LeanTween.cancelAll();
             // isCreatingQuestion = true;
             Handheld.Vibrate();
-            // StopCoroutine(createQuestionRoutine);
+            //  StopCoroutine(createQuestionRoutine);
 
             bool isLevelCleared = GameManagerWorld.instance.IsLevelCleared(9);
             miniLevel = 0;
             if (isLevelCleared)
             {
                 GameManagerWorld.instance.LevelClearedPanelSize.gameObject.SetActive(true);
+                // ClearChilds();
+                StartCoroutine(ClearChilds());
                 return;
             }
             AudioManagerWorld.instance.PlayButtonSound(6);
@@ -272,10 +286,10 @@ namespace MiniGame.WorldOfShape
             StarsContainerWorld.instance.LevelSkipped(GameManagerWorld.instance.clearedLevels);
             GameManagerWorld.instance.clearedLevels++;
             // isCreatingQuestion = false;
-            if (isCreatingQuestion == false)
+            if (isCreatingQuestion == false && createQuestionRoutine == null)
             {
-            CreateQuestion();
-            }
+                CreateQuestion();
+             }
 
         }
 
@@ -326,7 +340,7 @@ namespace MiniGame.WorldOfShape
             }
         }
 
-    
+
         public void isSolved(int ans)
         {
             if (isCreatingQuestion || currentQuestionSolved)

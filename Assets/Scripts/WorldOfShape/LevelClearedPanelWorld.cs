@@ -30,7 +30,7 @@ namespace MiniGame.WorldOfShape
         }
         public void RepeatGame()
         {
-            GamePlayPanelWorld.instance.isCreatingQuestion = true;
+            // GamePlayPanelWorld.instance.isCreatingQuestion = true;
             Handheld.Vibrate();
             GameManagerWorld.instance.clearedLevels = 0;
             GamePlayPanelWorld.instance.miniLevel = 0;
@@ -39,7 +39,7 @@ namespace MiniGame.WorldOfShape
             StarsContainerWorld.instance.SetAllStarsNormal();
             AudioManagerWorld.instance.PlayButtonSound(8);
             // GamePlayPanelWorld.instance.StartCoroutine(GamePlayPanelWorld.instance.MonitorContainer());
-            GamePlayPanelWorld.instance.isCreatingQuestion = false;
+            // GamePlayPanelWorld.instance.isCreatingQuestion = false;
             GamePlayPanelWorld.instance.CreateQuestion();
 
         }

@@ -10570,7 +10570,6 @@ MonoBehaviour:
   - color: black
     basketColor: {r: 0.21698111, g: 0.18729973, b: 0.18729973, a: 1}
     shapes:
-    - {fileID: 1234572714, guid: 09ddd1bfe421045138705541ba9649a3, type: 3}
     - {fileID: 262970364, guid: 09ddd1bfe421045138705541ba9649a3, type: 3}
     - {fileID: 1810122558, guid: 09ddd1bfe421045138705541ba9649a3, type: 3}
     - {fileID: -213058747, guid: 09ddd1bfe421045138705541ba9649a3, type: 3}
