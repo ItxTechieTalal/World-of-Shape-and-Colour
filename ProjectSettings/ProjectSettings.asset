@@ -245,7 +245,7 @@ PlayerSettings:
   clonedFromGUID: 10ad67313f4034357812315f3c407484
   templatePackageId: com.unity.template.2d@7.0.4
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  useCustomMainManifest: 0
+  useCustomMainManifest: 1
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0
   useCustomLauncherGradleManifest: 0
@@ -280,7 +280,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 3cc717e789d124b66a0115be6aa59293, type: 3}
+      m_Icon: {fileID: 2800000, guid: b08bac229035f4d09a82019819f87b9c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
