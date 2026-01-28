@@ -1,10 +1,9 @@
 namespace MiniGame.WorldOfShape
-{
-    using System.Collections;
+{ 
     using UnityEngine;
     using UnityEngine.UI;
 
-    public class StarsContainerWorld : MonoBehaviour
+    public class StarsContainerWorldV2 : MonoBehaviour
     {
         public const int MINI_LEVEL_TARGET = 5;
 
@@ -12,7 +11,7 @@ namespace MiniGame.WorldOfShape
         public GameObject[] starStates;
         public Sprite goldenStar;
         public Sprite normalStar;
-        public static StarsContainerWorld instance;
+        public static StarsContainerWorldV2 instance;
         public float starScaleSize;
         void Awake()
         {
@@ -36,28 +35,6 @@ namespace MiniGame.WorldOfShape
         {
 
         }
-        void OnEnable()
-        {
-            EnableStars();
-
-        }
-        public void EnableStars()
-        {
-            StartCoroutine(EnableStarsC());
-        }
-        IEnumerator EnableStarsC()
-        {
-            foreach (GameObject star in stars)
-            {
-                star.SetActive(false);
-            }
-            yield return new WaitForSeconds(0.5f);
-            for (int i = 0; i < stars.Length; i++)
-            {
-                yield return new WaitForSeconds(0.5f);
-                stars[i].gameObject.SetActive(true);
-            }
-        }
         public void LevelCleared(int starNumber)
         {
 
@@ -73,13 +50,13 @@ namespace MiniGame.WorldOfShape
             if (starNumber < stars.Length)
             {
                 stars[starNumber].transform.GetChild(count).gameObject.SetActive(true);
-
+             
             }
 
-            if (GameManagerWorld.instance.IsLevelCleared() && count >= MINI_LEVEL_TARGET - 1)
-            {
-                SetAllStarsNormal();
-            }
+            // if (GameManagerWorld.instance.IsLevelCleared() && count >= MINI_LEVEL_TARGET - 1)
+            // {
+            //     SetAllStarsNormal();
+            // }
 
         }
 

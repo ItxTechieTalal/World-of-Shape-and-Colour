@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "World of Shape and Colour.sln"
+    "dotnet.defaultSolution": "World-of-Shape-and-Colour.sln"
 }

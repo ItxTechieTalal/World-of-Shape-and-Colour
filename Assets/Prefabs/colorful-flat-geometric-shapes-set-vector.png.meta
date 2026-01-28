@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: d97e526cffe1e4b92be1adc076eb72a4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_0
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 769
+        width: 230
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0cefcf73a5b42e0ab2b187b6167ab3
+      internalID: 1384484461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 783
+        width: 229
+        height: 198
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc85160b6c659453ba8ce72ed45fe0c1
+      internalID: 911491045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_2
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 776
+        width: 216
+        height: 215
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea70557636c348e9adb42e97d7ce5d4
+      internalID: 878388841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_3
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 811
+        width: 238
+        height: 144
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f974bccb808406bbc3b966d4573414
+      internalID: -1980106868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_4
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 758
+        width: 187
+        height: 250
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28157c4b42f1a4bde8c9d677c08f87db
+      internalID: 376819972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 447
+        width: 230
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27030b322e09465b8f7ed6415ebb3c8
+      internalID: 1831027314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_6
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 453
+        width: 229
+        height: 217
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad39a95686ec645fd9c8a5ff77f490c1
+      internalID: 255777812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 448
+        width: 200
+        height: 228
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff6bd68c5d6a42e286e7ca307b555f7
+      internalID: 1030877273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_8
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 464
+        width: 229
+        height: 196
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7537cbbea797a4009bed89b6e2e5d190
+      internalID: -1992875206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_9
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 447
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038fa3312a444499a862eefffb6e0189
+      internalID: 1814930463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_10
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 132
+        width: 228
+        height: 216
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457ce4d6d049a4eed9d1b1934867347d
+      internalID: 89863436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_11
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 140
+        width: 230
+        height: 201
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eed49d4fb1d4e66a5222d8dc1a6286
+      internalID: -1741403925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 141
+        width: 200
+        height: 199
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9623d49c9ce054738930f5e7213f3243
+      internalID: 145808246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_13
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 120
+        width: 206
+        height: 241
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630df1fb4fab54f5da923d31d93447ca
+      internalID: -931974722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colorful-flat-geometric-shapes-set-vector_14
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 183
+        width: 230
+        height: 115
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b32321097d5444318c0a86a384a533e
+      internalID: 2047690833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      colorful-flat-geometric-shapes-set-vector_0: 1384484461
+      colorful-flat-geometric-shapes-set-vector_1: 911491045
+      colorful-flat-geometric-shapes-set-vector_10: 89863436
+      colorful-flat-geometric-shapes-set-vector_11: -1741403925
+      colorful-flat-geometric-shapes-set-vector_12: 145808246
+      colorful-flat-geometric-shapes-set-vector_13: -931974722
+      colorful-flat-geometric-shapes-set-vector_14: 2047690833
+      colorful-flat-geometric-shapes-set-vector_2: 878388841
+      colorful-flat-geometric-shapes-set-vector_3: -1980106868
+      colorful-flat-geometric-shapes-set-vector_4: 376819972
+      colorful-flat-geometric-shapes-set-vector_5: 1831027314
+      colorful-flat-geometric-shapes-set-vector_6: 255777812
+      colorful-flat-geometric-shapes-set-vector_7: 1030877273
+      colorful-flat-geometric-shapes-set-vector_8: -1992875206
+      colorful-flat-geometric-shapes-set-vector_9: 1814930463
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
