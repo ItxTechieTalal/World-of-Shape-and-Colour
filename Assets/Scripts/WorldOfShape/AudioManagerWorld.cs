@@ -2,8 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MiniGame.WorldOfShape
-{
+// namespace MiniGame.WorldOfShape
+// {
 
 
     public class AudioManagerWorld : MonoBehaviour
@@ -346,7 +346,7 @@ namespace MiniGame.WorldOfShape
 
     }
 
-}
+// }
 [System.Serializable]
 public class CustomFlag
 {

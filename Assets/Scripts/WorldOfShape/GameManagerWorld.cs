@@ -74,7 +74,7 @@ namespace MiniGame.WorldOfShape
             return clearedLevels >= count;
 
         }
-
+    
     }
 
 }

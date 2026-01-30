@@ -1,6 +1,7 @@
 
 
 
+using System.Collections;
 using System.Collections.Generic;
 using MiniGame.WorldOfShape;
 using UnityEngine;
@@ -45,10 +46,27 @@ public class GamePlayWorldV2 : MonoBehaviour
         SpawnRandom();
     }
 
+    #region  SpawnRandom
+    Coroutine spawnRandomCoroutine;
     [ContextMenu("Spawn Random")]
     public void SpawnRandom()
     {
-        //select random frames
+        if (spawnRandomCoroutine != null)
+        {
+            StopCoroutine(spawnRandomCoroutine);
+            spawnRandomCoroutine = null;
+        }
+        if (spawnRandomCoroutine == null)
+        {
+
+            spawnRandomCoroutine = StartCoroutine(SpawnRandomC());
+        }
+
+
+    }
+    IEnumerator SpawnRandomC()
+    {
+        CleanAll();        //select random frames
         selectedParents.Clear();
         selectedChilds.Clear();
 
@@ -70,12 +88,13 @@ public class GamePlayWorldV2 : MonoBehaviour
             }
         }
 
-
+        yield return new WaitForSeconds(1.7f);
         //Cleaning
         spawned.Clear();
         foreach (Transform child in mainCont.transform) Destroy(child.gameObject);
         for (int i = 0; i < 8; i++)
         {
+            yield return new WaitForSeconds(0.1f);
             if (i < 3)
                 SpawnRandomHelper(selectedChilds[0], 0);
             else if (i >= 3 && i <= 5)
@@ -90,9 +109,28 @@ public class GamePlayWorldV2 : MonoBehaviour
         }
 
         SpawnRightSideElements();
+        yield return new WaitForSeconds(0.5f);
         BottomElements();
+        yield return new WaitForSeconds(0.5f);
+        spawnRandomCoroutine = null;
+
+
     }
+    #endregion
+
+    #region Bottom Elements
+    Coroutine bottomElementsCoroutine;
     public void BottomElements()
+    {
+        if (bottomElementsCoroutine != null)
+        {
+            StopCoroutine(bottomElementsCoroutine);
+            bottomElementsCoroutine = null;
+        }
+        if (bottomElementsCoroutine == null)
+            bottomElementsCoroutine = StartCoroutine(BottomElementsC());
+    }
+    IEnumerator BottomElementsC()
     {
         foreach (Transform child in bottomContainer)
         {
@@ -100,7 +138,7 @@ public class GamePlayWorldV2 : MonoBehaviour
         }
         for (int i = 0; i < 3; i++)
         {
-
+            yield return new WaitForSeconds(0.1f);
             RectTransform item = Instantiate(itemPrefab, bottomContainer);
             Wos2Item itemS = item.GetComponent<Wos2Item>();
             Sprite parent = ItemManagerWorldV2.instance.parents[selectedParents[i]];
@@ -109,8 +147,23 @@ public class GamePlayWorldV2 : MonoBehaviour
 
 
         }
+        bottomElementsCoroutine = null;
     }
+    #endregion
+    #region Right Side Elements
+
+    Coroutine rightSideElementsCoroutine;
     public void SpawnRightSideElements()
+    {
+        if (rightSideElementsCoroutine != null)
+        {
+            StopCoroutine(rightSideElementsCoroutine);
+            rightSideElementsCoroutine = null;
+        }
+        if (rightSideElementsCoroutine == null)
+            rightSideElementsCoroutine = StartCoroutine(SpawnRightSideElementsC());
+    }
+    IEnumerator SpawnRightSideElementsC()
     {
         foreach (Transform child in sideContainer)
         {
@@ -121,6 +174,7 @@ public class GamePlayWorldV2 : MonoBehaviour
 
         foreach (int parentsIndex in selectedParents)
         {
+            yield return new WaitForSeconds(0.1f);
             RectTransform item = Instantiate(itemPrefab, sideContainer);
             item.gameObject.name = i.ToString();
             item.GetChild(0).gameObject.name = i.ToString();
@@ -130,7 +184,7 @@ public class GamePlayWorldV2 : MonoBehaviour
             i++;
         }
     }
-
+    #endregion
     public void SpawnRandomHelper(int i, int j)
     {
         // Debug.LogError("spawnRandomHelper");
@@ -221,6 +275,32 @@ public class GamePlayWorldV2 : MonoBehaviour
             sideContainer.GetChild(2).gameObject.SetActive(false);
         }
     }
+
+    #region CleanCOntianer
+    IEnumerator ClearContainer(Transform container)
+    {
+        if (container == null)
+            yield break;
+
+        for (int i = container.childCount - 1; i >= 0; i--)
+        {
+            yield return new WaitForSeconds(0.1f);
+            Destroy(container.GetChild(i).gameObject);
+        }
+    }
+    public void CleanAll()
+    {
+        levelSolved = false;
+
+        spawned.Clear();
+        selectedParents.Clear();
+        selectedChilds.Clear();
+
+        ClearContainer(mainCont);
+        ClearContainer(sideContainer);
+        ClearContainer(bottomContainer);
+    }
+    #endregion
 
     // public void SpawnRandomHelper()
     // {

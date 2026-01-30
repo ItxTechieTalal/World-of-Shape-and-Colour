@@ -29,13 +29,13 @@ public class TouchInstantiateMobile : MonoBehaviour
 
             if (touchedObject == null)
             {
-                Debug.LogError("No object touched!");
+                Debug.Log("No object touched!");
                 return;
             }
 
             if (touchedObject.tag != "Parent")
             {
-                Debug.LogError("Touched object has invalid tag: " + touchedObject.tag + ", GameObject: " + touchedObject.name);
+                Debug.Log("Touched object has invalid tag: " + touchedObject.tag + ", GameObject: " + touchedObject.name);
                 return;
             }
 

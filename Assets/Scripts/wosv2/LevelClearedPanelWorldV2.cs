@@ -42,7 +42,8 @@ namespace MiniGame.WorldOfShape
             AudioManagerWorld.instance.PlayButtonSound(8);
             // GamePlayPanelWorld.instance.StartCoroutine(GamePlayPanelWorld.instance.MonitorContainer());
             // GamePlayPanelWorld.instance.isCreatingQuestion = false;
-            GamePlayPanelWorld.instance.CreateQuestion();
+            // GamePlayPanelWorld.instance.CreateQuestion();
+            GamePlayWorldV2.instance.SpawnRandom();
 
         }
 
