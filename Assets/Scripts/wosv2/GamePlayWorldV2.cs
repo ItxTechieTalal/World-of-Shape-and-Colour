@@ -296,9 +296,11 @@ public class GamePlayWorldV2 : MonoBehaviour
         selectedParents.Clear();
         selectedChilds.Clear();
 
-        ClearContainer(mainCont);
-        ClearContainer(sideContainer);
-        ClearContainer(bottomContainer);
+        StartCoroutine(ClearContainer(mainCont));
+        StartCoroutine(ClearContainer(sideContainer));
+        StartCoroutine(ClearContainer(bottomContainer));
+        // ClearContainer(sideContainer);
+        // ClearContainer(bottomContainer);
     }
     #endregion
 

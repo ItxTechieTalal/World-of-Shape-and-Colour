@@ -59,13 +59,24 @@ namespace MiniGame.WorldOfShape
         }
 
 
+        // public void CreateQuestion()
+        // {
+        //     // if (isCreatingQuestion) return;
+        //     if(createQuestionRoutine != null) StopCoroutine(createQuestionRoutine);
+        //     if(createQuestionRoutine == null)
+        //     createQuestionRoutine = StartCoroutine(CreateQuestionCoroutine());
+        // }
         public void CreateQuestion()
         {
-            // if (isCreatingQuestion) return;
-            if(createQuestionRoutine != null) StopCoroutine(createQuestionRoutine);
-            if(createQuestionRoutine == null)
+            if (createQuestionRoutine != null)
+            {
+                StopCoroutine(createQuestionRoutine);
+                createQuestionRoutine = null;
+            }
+
             createQuestionRoutine = StartCoroutine(CreateQuestionCoroutine());
         }
+
         // IEnumerator CreateQuestionCoroutine()
         // {
 
@@ -227,6 +238,23 @@ namespace MiniGame.WorldOfShape
             shuffleCoRoutine = StartCoroutine(ShuffleBottomContainerChildrenQ());
         }
 
+        // #region ClearHelper
+        // public void ClearChilds()
+        // {
+        //     StartCoroutine(ClearChildsC());
+        // }
+        // public IEnumerator ClearChildsC()
+        // {
+        //     if (parent.transform.childCount > 0)
+        //     {
+        //         Debug.LogWarning("Too many children in parent! Forcing cleanup.");
+        //         for (int i = parent.transform.childCount - 1; i >= 0; i--)
+        //         {
+        //             yield return new WaitForSeconds(0.1f);
+        //             Destroy(parent.transform.GetChild(i).gameObject);
+        //         }
+        //     }
+        // }
         private IEnumerator ShuffleBottomContainerChildrenQ()
         {
             // Get all children transforms
@@ -299,7 +327,10 @@ namespace MiniGame.WorldOfShape
 
         }
 
-
+public void CallClearChilds()
+        {
+            StartCoroutine(ClearChilds());
+        }
         private IEnumerator ClearChilds()
         {
             for (int i = parent.transform.childCount - 1; i >= 0; i--)

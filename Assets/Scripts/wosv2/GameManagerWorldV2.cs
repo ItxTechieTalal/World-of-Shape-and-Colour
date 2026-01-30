@@ -17,6 +17,7 @@ namespace MiniGame.WorldOfShape
         public GameObject GamePlayPanelSize;
         public GameObject InitialPanelSize;
         public GameObject HowToPlayPanelSize;
+        public GameObject UpperStarsPanel;
         void Awake()
         {
             if (instance == null)
@@ -37,7 +38,11 @@ namespace MiniGame.WorldOfShape
             AudioManagerWorld.instance.PlayButtonSound(0);
 
             // GamePlayPanelSize.SetActive(true);
-            InitialPanelSize.SetActive(false);
+            // InitialPanelSize.SetActive(false);\
+            LeanTween.delayedCall(1, () =>
+            {
+            UpperStarsPanel.SetActive(true);
+            });
             // GamePlayPanelWorld.instance.CreateQuestion();
             // GamePlayPanelWorld.instance.PlayMonitorContainer();
             ApplySelectedGame();
@@ -59,66 +64,35 @@ namespace MiniGame.WorldOfShape
         [Header("Game Roots")]
         public GameObject Game1Root; // GamePlayPanelWorld whole UI/root
         public GameObject Game2Root; // GamePlayWorldV2 whole UI/root
-
-
-        // public void ApplySelectedGame()
-        // {
-        //     // always hide both first
-        //     if (Game1Root != null) Game1Root.SetActive(false);
-        //     if (Game2Root != null) Game2Root.SetActive(false);
-
-        //     int selected = GetSelectedGame();
-
-        //     // fallback rules
-        //     if (selected == 0 )
-        //         selected = 1; // default Game 1
-
-        //     // fix toggle UI so only one stays ON
-        //     if (Game_One_Toggle != null) Game_One_Toggle.isOn = (selected == 1);
-        //     if (Game_Two_Toggle != null) Game_Two_Toggle.isOn = (selected == 2);
-
-        //     // open correct game
-        //     if (selected == 1)
-        //     {
-        //         if (Game1Root != null)
-        //             Game1Root.SetActive(true);
-
-        //         // start Game 1 logic
-        //         if (GamePlayPanelWorld.instance != null)
-        //             GamePlayPanelWorld.instance.CreateQuestion();
-        //     }
-        //     else if (selected == 2)
-        //     {
-        //         if (Game2Root != null)
-        //             Game2Root.SetActive(true);
-
-        //         // start Game 2 logic
-        //         if (GamePlayWorldV2.instance != null)
-        //             GamePlayWorldV2.instance.SpawnRandom();
-        //     }
-        //     else if (selected == 3)
-        //     {
-        //         int random = Random.Range(0, 2);
-        //         if (random == 0)
-        //         {
-        //             if (Game1Root != null)
-        //                 Game1Root.SetActive(true);
-        //             GamePlayPanelWorld.instance.CreateQuestion();
-
-
-        //         }
-        //         else
-        //         {
-        //             if (Game2Root != null)
-        //                 Game2Root.SetActive(true);
-        //             GamePlayWorldV2.instance.SpawnRandom();
-
-        //         }
-        //     }
-        // }
-
+        Coroutine applySelectedGameCoRoutine = null;
         public void ApplySelectedGame()
         {
+            if (applySelectedGameCoRoutine != null)
+            {
+                StopCoroutine(applySelectedGameCoRoutine);
+                applySelectedGameCoRoutine = null;
+            }
+            if (applySelectedGameCoRoutine == null)
+            {
+
+                applySelectedGameCoRoutine = StartCoroutine(ApplySelectedGameC());
+            }
+        }
+
+        public IEnumerator ApplySelectedGameC()
+        {
+            if (Game1Root.activeSelf)
+            {
+                GamePlayPanelWorld.instance?.CallClearChilds();
+                yield return new WaitForSeconds(2f);
+            }
+            if (Game2Root.activeSelf)
+            {
+                GamePlayWorldV2.instance?.CleanAll();
+                yield return new WaitForSeconds(2f);
+
+            }
+            yield return new WaitForSeconds(0.5f);
             // always hide both first
             if (Game1Root != null) Game1Root.SetActive(false);
             if (Game2Root != null) Game2Root.SetActive(false);
@@ -141,6 +115,7 @@ namespace MiniGame.WorldOfShape
             if (selected == 1)
             {
                 if (Game1Root != null) Game1Root.SetActive(true);
+
                 GamePlayPanelWorld.instance?.CreateQuestion();
             }
             else // selected == 2
@@ -148,6 +123,7 @@ namespace MiniGame.WorldOfShape
                 if (Game2Root != null) Game2Root.SetActive(true);
                 GamePlayWorldV2.instance?.SpawnRandom();
             }
+            applySelectedGameCoRoutine = null;
         }
 
 
@@ -307,6 +283,10 @@ namespace MiniGame.WorldOfShape
             ApplySelectedGame();
         }
 
+        public void Home()
+        {
+            SceneManager.LoadScene(0);
+        }
         #endregion
 
     }
