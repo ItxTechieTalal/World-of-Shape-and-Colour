@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using MiniGame.FindAndMatch;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
+using MiniGame.WorldOfShape;
 
 public class TouchInstantiateMobile : MonoBehaviour
 {
@@ -75,8 +76,9 @@ public class TouchInstantiateMobile : MonoBehaviour
         {
             Debug.LogError("Prefab does not have Wos2Item component!");
             return;
-        }
 
+        }
+        currentPrefabS.particleContainer.SetActive(true);
         // Debug.LogError("Instantiated prefab with name: " + name);
         if (name == "0")
         {
@@ -197,11 +199,16 @@ public class TouchInstantiateMobile : MonoBehaviour
                 currentPrefab.transform.position = hitObject.transform.position;
                 Wos2Item item = hitObject.GetComponent<Wos2Item>();
                 item.turnMyParentOn(currentPrefab.transform.GetChild(0).GetComponent<Image>().sprite);
+                item.PlayParticle();
                 GamePlayWorldV2.instance.CheckIfAnyChildQuestionSolved();
+                GameManagerWorldV2.instance.PlayAnswerMusic();
+
                 Destroy(currentPrefab);
             }
             else
             {
+                AudioManagerWorld.instance.PlayButtonSound(5);
+
                 Debug.Log("Prefab dropped outside of valid layer zone" + hitObject.transform.name + " " + hitObject.layer.ToString());
                 Destroy(currentPrefab);
                 // Optionally, reset the prefab to its original position

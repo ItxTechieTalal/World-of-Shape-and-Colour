@@ -105,6 +105,7 @@ public class TextManagerWorld : MonoBehaviour
                     for (int i = 0; i < textInputs.Length; i++)
                     {
                         textInputs[i].text.text = languageList.languages[0].lines[i];
+                        
                     }
                     gameName.sprite = gameNames[0];
                     // kidsMathS.sprite = kidsMath[0];

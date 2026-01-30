@@ -83,10 +83,11 @@ namespace MiniGame.WorldOfShape
 
             }
 
-            // if (GameManagerWorld.instance.IsLevelCleared() && count >= MINI_LEVEL_TARGET - 1)
-            // {
-            //     SetAllStarsNormal();
-            // }
+            if (GameManagerWorldV2.instance.IsLevelCleared() && count >= MINI_LEVEL_TARGET - 1)
+            {
+                SetAllStarsNormal();
+                GameManagerWorldV2.instance.LevelClearedPanelSize.SetActive(true);
+            }
 
         }
 

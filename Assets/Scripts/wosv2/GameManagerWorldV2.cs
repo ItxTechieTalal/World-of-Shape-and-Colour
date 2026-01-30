@@ -17,6 +17,8 @@ namespace MiniGame.WorldOfShape
         public GameObject GamePlayPanelSize;
         public GameObject InitialPanelSize;
         public GameObject HowToPlayPanelSize;
+        public GameObject text1GamePlayPanel;
+        public GameObject text2GamePlayPanel;
         public GameObject UpperStarsPanel;
         void Awake()
         {
@@ -41,7 +43,7 @@ namespace MiniGame.WorldOfShape
             // InitialPanelSize.SetActive(false);\
             LeanTween.delayedCall(1, () =>
             {
-            UpperStarsPanel.SetActive(true);
+                UpperStarsPanel.SetActive(true);
             });
             // GamePlayPanelWorld.instance.CreateQuestion();
             // GamePlayPanelWorld.instance.PlayMonitorContainer();
@@ -52,7 +54,20 @@ namespace MiniGame.WorldOfShape
         {
             Handheld.Vibrate();
             HowToPlayPanelSize.SetActive(true);
-            AudioManagerWorld.instance.PlayButtonSound(1);
+            if (Game1Root.activeSelf)
+            {
+
+                AudioManagerWorld.instance.PlayButtonSound(1);
+                text1GamePlayPanel.SetActive(true);
+                text2GamePlayPanel.SetActive(false);
+            }
+            if (Game2Root.activeSelf)
+            {
+
+                AudioManagerWorld.instance.PlayButtonSound(23);
+                text1GamePlayPanel.SetActive(false);
+                text2GamePlayPanel.SetActive(true);
+            }
         }
         public void SolverTheProblemSound()
         {
@@ -85,6 +100,7 @@ namespace MiniGame.WorldOfShape
             {
                 GamePlayPanelWorld.instance?.CallClearChilds();
                 yield return new WaitForSeconds(2f);
+
             }
             if (Game2Root.activeSelf)
             {
@@ -117,11 +133,21 @@ namespace MiniGame.WorldOfShape
                 if (Game1Root != null) Game1Root.SetActive(true);
 
                 GamePlayPanelWorld.instance?.CreateQuestion();
+                if (GetMiniLevel() == 0 && clearedLevels == 0)
+                {
+                    AudioManagerWorld.instance.PlayButtonSound(1);
+
+                }
             }
             else // selected == 2
             {
                 if (Game2Root != null) Game2Root.SetActive(true);
                 GamePlayWorldV2.instance?.SpawnRandom();
+                if (GetMiniLevel() == 0 && clearedLevels == 0)
+                {
+                    AudioManagerWorld.instance.PlayButtonSound(23);
+
+                }
             }
             applySelectedGameCoRoutine = null;
         }
@@ -192,6 +218,8 @@ namespace MiniGame.WorldOfShape
         public void OpenSlectionPanel()
         {
             SelectionPanel.SetActive(true);
+            AudioManagerWorld.instance.PlayButtonSound(22);
+
             Handheld.Vibrate();
         }
         public void CloseSelectionPanel()
@@ -286,6 +314,37 @@ namespace MiniGame.WorldOfShape
         public void Home()
         {
             SceneManager.LoadScene(0);
+        }
+
+
+        public void PlayAnswerMusic()
+        {
+            int random = Random.Range(0, 6);
+            if (random == 0)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(4);
+            }
+            else if (random == 1)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(10);
+            }
+            else if (random == 2)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(11);
+            }
+            else if (random == 3)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(7);
+            }
+            else if (random == 4)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(9);
+            }
+            else if (random == 5)
+            {
+                AudioManagerWorld.instance.PlayButtonSound(12);
+            }
+
         }
         #endregion
 

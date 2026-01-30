@@ -9,6 +9,7 @@ public class Wos2Item : MonoBehaviour
     public Image parent;
     public Image child;
     public bool solved = false;
+    public GameObject particleContainer;
     // Start is called before the first frame update
     public void SetParentAndChild(Sprite _parent, Sprite _child)
     {
@@ -48,6 +49,11 @@ public class Wos2Item : MonoBehaviour
         }
         return false;
 
+    }
+    public void PlayParticle()
+    {
+        ParticleSystem particle = particleContainer.transform.GetChild(0).GetComponent<ParticleSystem>();
+        particle.Play();
     }
     public void SetSolved()
     {
