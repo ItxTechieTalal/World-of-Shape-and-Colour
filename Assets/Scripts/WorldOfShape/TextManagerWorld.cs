@@ -15,7 +15,9 @@ public class TextManagerWorld : MonoBehaviour
 
     public static TextManagerWorld instance;
     public Sprite[] gameNames;
+    public Sprite[] SelectionModeName;
     public Image gameName;
+    public Image SelectionModeImg   ;
 
 
     void Awake()
@@ -108,6 +110,7 @@ public class TextManagerWorld : MonoBehaviour
                         
                     }
                     gameName.sprite = gameNames[0];
+                    SelectionModeImg.sprite = SelectionModeName[0];
                     // kidsMathS.sprite = kidsMath[0];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = englishInputs[0];
 
@@ -121,6 +124,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[1].lines[i];
                     }
                     gameName.sprite = gameNames[1];
+                    SelectionModeImg.sprite = SelectionModeName[1];
 
                     // kidsMathS.sprite = kidsMath[1];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[1];
@@ -134,6 +138,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[2].lines[i];
                     }
                     gameName.sprite = gameNames[2];
+                    SelectionModeImg.sprite = SelectionModeName[2];
 
                     // kidsMathS.sprite = kidsMath[1];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[1];
@@ -147,6 +152,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[3].lines[i];
                     }
                     gameName.sprite = gameNames[3];
+                    SelectionModeImg.sprite = SelectionModeName[3];
 
                     // kidsMathS.sprite = kidsMath[2];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[2];
@@ -160,6 +166,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[4].lines[i];
                     }
                     gameName.sprite = gameNames[4];
+                    SelectionModeImg.sprite = SelectionModeName[4];
 
                     // kidsMathS.sprite = kidsMath[2];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[2];
@@ -173,6 +180,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[5].lines[i];
                     }
                     gameName.sprite = gameNames[5];
+                    SelectionModeImg.sprite = SelectionModeName[5];
                     // kidsMathS.sprite = kidsMath[2];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[2];
 
@@ -185,6 +193,7 @@ public class TextManagerWorld : MonoBehaviour
                         textInputs[i].text.text = languageList.languages[6].lines[i];
                     }
                     gameName.sprite = gameNames[6];
+                    SelectionModeImg.sprite = SelectionModeName[6];
 
                     // kidsMathS.sprite = kidsMath[2];
                     // GamePlayPanelSize.instance.QuestionInstruction.text = LatvianInputs[2];

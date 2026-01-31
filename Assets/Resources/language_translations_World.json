@@ -12,7 +12,8 @@
         "Match, Sort, and Learn - One Shape at a Time!",
         "Match, Sort, and Learn - One Shape at a Time!",
         "Select mode",
-        "Match shapes with the correct symbols"
+        "Match shapes with the correct symbols",
+        "Skip"
       ]
     },
     {
@@ -27,7 +28,8 @@
         "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!",
         "Rūšiuok, dėliok ir mokykis - po vieną formą vienu metu!",
         "Pasirinkite režimą",
-        "Sujunk figūras su tinkamais simboliais"
+        "Sujunk figūras su tinkamais simboliais",
+        "Praleisti"
       ]
     },
     {
@@ -42,7 +44,8 @@
         "Sorteeri, sobita ja õpi - üks kuju korraga!",
         "Sorteeri, sobita ja õpi - üks kuju korraga!",
         "Vali režiim",
-        "Ühenda kujundid õigete sümbolitega"
+        "Ühenda kujundid õigete sümbolitega",
+        "Jäta vahele"
       ]
     },
     {
@@ -57,7 +60,8 @@
         "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!",
         "Šķiro, saskaņo un mācies - pa vienai formai vienlaikus!",
         "Izvēlies režīmu",
-        "Savieno figūras ar pareizajiem simboliem"
+        "Savieno figūras ar pareizajiem simboliem",
+        "Izlaist"
       ]
     },
     {
@@ -72,7 +76,8 @@
         "Sortuj, dopasuj i ucz się - jedna forma na raz!",
         "Sortuj, dopasuj i ucz się - jedna forma na raz!",
         "Wybierz tryb",
-        "Połącz kształty z odpowiednimi symbolami"
+        "Połącz kształty z odpowiednimi symbolami",
+        "Pomiń"
       ]
     },
     {
@@ -87,7 +92,8 @@
         "Třiď, přiřazuj a uč se - jedna tvary za druhou!",
         "Třiď, přiřazuj a uč se - jedna tvary za druhou!",
         "Vyberte režim",
-        "Spoj tvary se správnými symboly"
+        "Spoj tvary se správnými symboly",
+        "Přeskočit"
       ]
     },
     {
@@ -102,7 +108,8 @@
         "Triedi, priraďuj a uč sa - jedna tvar za druhou!",
         "Triedi, priraďuj a uč sa - jedna tvar za druhou!",
         "Vyber režim",
-        "Spoj tvary so správnymi symbolmi"
+        "Spoj tvary so správnymi symbolmi",
+        "Preskočiť"
       ]
     }
   ]

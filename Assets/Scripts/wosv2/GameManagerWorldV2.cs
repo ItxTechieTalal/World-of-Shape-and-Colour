@@ -133,21 +133,21 @@ namespace MiniGame.WorldOfShape
                 if (Game1Root != null) Game1Root.SetActive(true);
 
                 GamePlayPanelWorld.instance?.CreateQuestion();
-                if (GetMiniLevel() == 0 && clearedLevels == 0)
-                {
+                // if (GetMiniLevel() == 0 && clearedLevels == 0)
+                // {
                     AudioManagerWorld.instance.PlayButtonSound(1);
 
-                }
+                // }
             }
             else // selected == 2
             {
                 if (Game2Root != null) Game2Root.SetActive(true);
                 GamePlayWorldV2.instance?.SpawnRandom();
-                if (GetMiniLevel() == 0 && clearedLevels == 0)
-                {
+                // if (GetMiniLevel() == 0 && clearedLevels == 0)
+                // {
                     AudioManagerWorld.instance.PlayButtonSound(23);
 
-                }
+                // }
             }
             applySelectedGameCoRoutine = null;
         }
